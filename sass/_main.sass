@@ -28,6 +28,7 @@ header
 	a
 		position: relative
 		display: block
+		padding: 3px 5px 10px
 		padding-top: 35px
 		width: 80px
 		text-align: center
@@ -51,9 +52,9 @@ header
 				background-color: #621a26	
 				color: #fff
 		&:before
-			+s(lk)
-			content: ''
+			font-family: 'icomoon'
 			display: block
+			font-size: 1.6em
 			top: 10px
 			left: 50%
 			margin-left: -10px
@@ -65,8 +66,8 @@ header
 	text-align: center
 	font: 0/0 Arial
 	li
-		display: inline-block
-		max-width: 180px
+		display: table-cell
+		width: 25%
 		a
 			font-size: 18px
 			font-family: $ff-itc
@@ -75,12 +76,13 @@ header
 			text-decoration: none
 			vertical-align: middle
 			padding: 35px 5px 35px 50px
-			display: inline-block
 			position: relative
-			display: table-cell
+			display: block
 			text-align: left
 			height: 2.2em
 			line-height: 1
+			vertical-align: top
+			
 			+r(tablet)
 				font-size: 16px
 			+r(950px)
@@ -88,6 +90,10 @@ header
 				max-width: 120px
 				&:before
 					display: none
+			span
+				display: table-cell
+				vertical-align: middle
+				
 					
 
 			&:hover
@@ -98,34 +104,18 @@ header
 				&:before
 					// +s(icon-time_active)	
 			&:before
-				content: ''
 				display: inline-block
 				vertical-align: middle
 				position: absolute
 				left: 5px
 				top: 50%
 				margin-top: -20px
+				font-family: 'icomoon'
+				font-size: 40px
 				+r(950px)
-					display: none
-					
-			&.icon-info:before
-				+s(icon-info)
-			&.icon-article:before
-				+s(icon-article)
-			&.icon-time:before
-				+s(icon-time)
-			&.icon-molotok:before
-				+s(icon-molotok)
+					// display: none
 		&.active a
 			color: #c38437
-			&.icon-info:before
-				+s(icon-info_active)
-			&.icon-article:before
-				+s(icon-article_active)
-			&.icon-time:before
-				+s(icon-time_active)
-			&.icon-molotok:before
-				+s(icon-molotok_active)
 nav
 	ul
 		display: table
@@ -415,19 +405,22 @@ nav
 	li
 		display: inline-block				
 		font-size: 16px
-		line-height: 32px
+		line-height: 24px
 		vertical-align: middle
 		width: 0.7em
+		padding: 0
 		&.pager-back,
 		&.pager-next
 			font-size: 3em
-			line-height: 32px
+			line-height: 24px
 			width: 0.3em
+			position: relative
+			top: -2px
 		a
 			color: #77232d
 			text-decoration: none
-			display: inline-block
-			// width: 1.2em
+			display: block
+			padding: 2px
 				
 
 		
