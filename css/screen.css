@@ -18,8 +18,48 @@ ul, ol { list-style-type: none; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) { * { -webkit-text-size-adjust: none; } }
 table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
-body { font-family: Arial, sans-serif; font-weight: normal; font-size: 12px; line-height: 1.4; }
+@font-face { font-family: 'linux_biolinum_oregular'; src: url("../fonts/linbiolinum_r.eot"); src: url("../fonts/linbiolinum_r.eot?#iefix") format("embedded-opentype"), url("../fonts/linbiolinum_r.woff") format("woff"), url("../fonts/linbiolinum_r.ttf") format("truetype"), url("../fonts/linbiolinum_r.svg#linux_biolinum_oregular") format("svg"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'CharterITC-Bold'; src: url("../fonts/CharterITC-Bold.eot"); src: url("../fonts/CharterITC-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/CharterITC-Bold.woff") format("woff"), url("../fonts/CharterITC-Bold.ttf") format("truetype"), url("../fonts/CharterITC-Bold.svg#CharterITC-Bold") format("svg"); }
+
+body { font-family: "linux_biolinum_oregular", Arial, sans-serif; font-weight: normal; font-size: 12px; line-height: 1.4; }
+
+a { color: white; }
+a:hover { color: #c38437; text-decoration: none; border-bottom: 1px solid #c38437; border-bottom: 1px solid rgba(195, 132, 55, 0.6); }
 
 .l { width: 100%; display: inline-block; }
 .l .l-col1 { float: left; width: 20%; }
 .l .l-col2 { float: right; width: 70%; }
+
+.layout { height: 100%; }
+
+html, body { height: 100%; }
+
+.page-wrap { min-height: 100%; /* equal to footer height */ margin-bottom: -30px; }
+.page-wrap:after { content: ""; display: block; }
+
+.footer, .page-wrap:after { height: 30px; overflow: hidden; }
+
+.wrapper { max-width: 1920px; margin: auto; }
+
+header { background: #72202a url(../img/icons/bg_header.png) 0 0 repeat; }
+
+nav ul { display: table; width: 100%; table-layout: fixed; }
+nav ul li { display: table-cell; height: 150px; vertical-align: bottom; background-position: center top; background-repeat: no-repeat; }
+nav ul li.zivopis { background-image: url(../img/bg_menu/zivopis.jpg); }
+nav ul li.serebro { background-image: url(../img/bg_menu/serebro.jpg); }
+nav ul li.faberze { background-image: url(../img/bg_menu/faberze.jpg); }
+nav ul li.bronza { background-image: url(../img/bg_menu/bronza.jpg); }
+nav ul li.steklo { background-image: url(../img/bg_menu/steklo.jpg); }
+nav ul li.farfor { background-image: url(../img/bg_menu/farfor.jpg); }
+nav ul li.yuvelir { background-image: url(../img/bg_menu/yuvelir.jpg); }
+nav ul li.ordena { background-image: url(../img/bg_menu/ordena.jpg); }
+nav ul li.kult { background-image: url(../img/bg_menu/kult.jpg); }
+nav ul li.raznoe { background-image: url(../img/bg_menu/raznoe.jpg); }
+nav ul li a { width: 100%; height: 100%; vertical-align: bottom; }
+nav ul li a span { background-color: rgba(0, 0, 0, 0.3); color: white; display: block; height: 2.8em; padding: 3px; }
+nav ul li a:hover span { background-color: rgba(114, 32, 42, 0.8); }
+
+.footer { background: #72202a url(../img/icons/bg_footer.png) 0 0 repeat; }
+.footer p { display: inline-block; line-height: 30px; margin-right: 20px; }
+.footer p.copyright { color: #130406; font-family: "LinBiolinumO"; font-size: 16px; }

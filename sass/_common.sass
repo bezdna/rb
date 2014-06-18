@@ -39,13 +39,21 @@
 // +font(book, cytiapro-black-webfont)  
 // =book
 // 	font-family: "book",arial,sans-serif 
-	
+$ff-linux: 'linux_biolinum_oregular'
+$ff-itc: 'CharterITC-Bold'
 body
 	font:
-		family: Arial,sans-serif
+		family: $ff-linux, Arial,sans-serif
 		weight: normal
 		size: 12px
 	line-height: 1.4
 
 
 // common blocks
+a 
+	color: #fff
+	&:hover
+		color: #c38437
+		text-decoration: none
+		border-bottom: 1px solid #c38437
+		border-bottom: 1px solid rgba(#c38437, 0.6)
