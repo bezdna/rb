@@ -3,18 +3,76 @@
 // VARS
 
 header
-	background: #72202a url(../img/icons/bg_header.png) 0 0 repeat 
+	background: #72202a url(../img/icons/bg_header.png) 0 0 repeat
+	.super-top
+		overflow: hidden
+		
+.logo
+	float: left
+	padding: 15px 20px
+	a
+		+s(logo)
+		display: block
+.cabinet
+	float: right
+	padding: 20px
+	a
+		position: relative
+		display: block
+		padding-top: 30px
+		&:hover
+			&:before
+				+s(lk_hover)
+		&:before
+			+s(lk)
+			content: ''
+			display: block
+			top: 0
+			left: 50%
+			margin-left: -10px
+			position: absolute
+			
+
+.menu-top
+	overflow: hidden
+	li
+		display: inline-block
+		a
+			font-size: 18px
+			text-decoration: none
+			vertical-align: middle
+			padding: 35px 5px
+			display: inline-block
+			
+			&:hover
+				text-decoration: none
+				border-bottom: none
+				background-color: rgba(0,0,0, 0.3)	
+				&:before
+					+s(icon-time_active)	
+			&:before
+				content: ''
+				+s(icon-time)
+				padding-right: 5px
+				display: inline-block
+				vertical-align: middle
+		&.active a
+			&:before
+				+s(icon-time_active)	
 nav
 	ul
 		display: table
 		width: 100%
 		table-layout: fixed
+		height: 150px
 		li
 			display: table-cell
-			height: 150px
+			// height: 150px
 			vertical-align: bottom
 			background-position: center top
 			background-repeat: no-repeat
+			position: relative
+			
 			&.zivopis
 				background-image: url(../img/bg_menu/zivopis.jpg)
 			&.serebro
@@ -36,19 +94,46 @@ nav
 			&.raznoe
 				background-image: url(../img/bg_menu/raznoe.jpg)
 			a
+				display: block
+				position: absolute
+				top: 0
+				left: 0
 				width: 100%
 				height: 100%
-				vertical-align: bottom
-				
-				span
-
+				color: #fff
+				font-family: $ff-linux
+				font-size: 16px
+				&:after
+					content: ''
+					display: block
+					height: 3em
+					position: absolute
+					bottom: 0
 					background-color: rgba(0,0,0, .3)
+					width: 100%
+					z-index: 1
+				&:hover
+					border-bottom: none
+
+				span
+					position: absolute
+					bottom: 0
+					
 					color: #fff
 					display: block
-					height: 2.8em
+					// height: 2.8em
 					padding: 3px
-				&:hover span
+					width: 100%
+					@include box-sizing(border-box)
+					vertical-align: bottom
+					
+					z-index: 2
+					
+				&:hover:after
 					background-color: rgba(#72202a, .8)
+			&.active a:after
+				background: #72202a
+
 				
 				
 			

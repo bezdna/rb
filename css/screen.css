@@ -25,7 +25,7 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 body { font-family: "linux_biolinum_oregular", Arial, sans-serif; font-weight: normal; font-size: 12px; line-height: 1.4; }
 
 a { color: white; }
-a:hover { color: #c38437; text-decoration: none; border-bottom: 1px solid #c38437; border-bottom: 1px solid rgba(195, 132, 55, 0.6); }
+a:hover { color: #c38437; text-decoration: none; }
 
 .l { width: 100%; display: inline-block; }
 .l .l-col1 { float: left; width: 20%; }
@@ -43,9 +43,26 @@ html, body { height: 100%; }
 .wrapper { max-width: 1920px; margin: auto; }
 
 header { background: #72202a url(../img/icons/bg_header.png) 0 0 repeat; }
+header .super-top { overflow: hidden; }
 
-nav ul { display: table; width: 100%; table-layout: fixed; }
-nav ul li { display: table-cell; height: 150px; vertical-align: bottom; background-position: center top; background-repeat: no-repeat; }
+.logo { float: left; padding: 15px 20px; }
+.logo a { background: url('../img/icons-s6bbe0cfc23.png') 0 0 no-repeat; width: 239px; height: 75px; display: block; }
+
+.cabinet { float: right; padding: 20px; }
+.cabinet a { position: relative; display: block; padding-top: 30px; }
+.cabinet a:hover:before { background: url('../img/icons-s6bbe0cfc23.png') 0 -446px no-repeat; width: 25px; height: 21px; }
+.cabinet a:before { background: url('../img/icons-s6bbe0cfc23.png') 0 -415px no-repeat; width: 25px; height: 21px; content: ""; display: block; top: 0; left: 50%; margin-left: -10px; position: absolute; }
+
+.menu-top { overflow: hidden; }
+.menu-top li { display: inline-block; }
+.menu-top li a { font-size: 18px; text-decoration: none; vertical-align: middle; padding: 35px 5px; display: inline-block; }
+.menu-top li a:hover { text-decoration: none; border-bottom: none; background-color: rgba(0, 0, 0, 0.3); }
+.menu-top li a:hover:before { background: url('../img/icons-s6bbe0cfc23.png') 0 -477px no-repeat; width: 39px; height: 39px; }
+.menu-top li a:before { content: ""; background: url('../img/icons-s6bbe0cfc23.png') 0 -170px no-repeat; width: 39px; height: 39px; padding-right: 5px; display: inline-block; vertical-align: middle; }
+.menu-top li.active a:before { background: url('../img/icons-s6bbe0cfc23.png') 0 -477px no-repeat; width: 39px; height: 39px; }
+
+nav ul { display: table; width: 100%; table-layout: fixed; height: 150px; }
+nav ul li { display: table-cell; vertical-align: bottom; background-position: center top; background-repeat: no-repeat; position: relative; }
 nav ul li.zivopis { background-image: url(../img/bg_menu/zivopis.jpg); }
 nav ul li.serebro { background-image: url(../img/bg_menu/serebro.jpg); }
 nav ul li.faberze { background-image: url(../img/bg_menu/faberze.jpg); }
@@ -56,9 +73,12 @@ nav ul li.yuvelir { background-image: url(../img/bg_menu/yuvelir.jpg); }
 nav ul li.ordena { background-image: url(../img/bg_menu/ordena.jpg); }
 nav ul li.kult { background-image: url(../img/bg_menu/kult.jpg); }
 nav ul li.raznoe { background-image: url(../img/bg_menu/raznoe.jpg); }
-nav ul li a { width: 100%; height: 100%; vertical-align: bottom; }
-nav ul li a span { background-color: rgba(0, 0, 0, 0.3); color: white; display: block; height: 2.8em; padding: 3px; }
-nav ul li a:hover span { background-color: rgba(114, 32, 42, 0.8); }
+nav ul li a { display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; color: white; font-family: "linux_biolinum_oregular"; font-size: 16px; }
+nav ul li a:after { content: ""; display: block; height: 3em; position: absolute; bottom: 0; background-color: rgba(0, 0, 0, 0.3); width: 100%; z-index: 1; }
+nav ul li a:hover { border-bottom: none; }
+nav ul li a span { position: absolute; bottom: 0; color: white; display: block; padding: 3px; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; vertical-align: bottom; z-index: 2; }
+nav ul li a:hover:after { background-color: rgba(114, 32, 42, 0.8); }
+nav ul li.active a:after { background: #72202a; }
 
 .footer { background: #72202a url(../img/icons/bg_footer.png) 0 0 repeat; }
 .footer p { display: inline-block; line-height: 30px; margin-right: 20px; }
