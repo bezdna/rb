@@ -10,12 +10,16 @@ header
 .logo
 	float: left
 	padding: 15px 20px
+	+r(tablet)
+		padding: 15px 10px
 	a
 		+s(logo)
 		display: block
 .cabinet
 	float: right
 	padding: 20px
+	+r(tablet)
+		padding: 20px 10px
 	a
 		position: relative
 		display: block
@@ -35,27 +39,37 @@ header
 
 .menu-top
 	overflow: hidden
+	text-align: center
+	font: 0/0 Arial
 	li
 		display: inline-block
+		max-width: 180px
 		a
 			font-size: 18px
+			font-family: $ff-linux
 			text-decoration: none
 			vertical-align: middle
-			padding: 35px 5px
+			padding: 35px 5px 35px 50px
 			display: inline-block
-			
+			position: relative
+			display: table-cell
+			height: 2.2em
+			line-height: 1
 			&:hover
 				text-decoration: none
 				border-bottom: none
-				background-color: rgba(0,0,0, 0.3)	
+				background-color: #621a26	
 				&:before
 					+s(icon-time_active)	
 			&:before
 				content: ''
 				+s(icon-time)
-				padding-right: 5px
 				display: inline-block
 				vertical-align: middle
+				position: absolute
+				left: 5px
+				top: 50%
+				margin-top: -20px
 		&.active a
 			&:before
 				+s(icon-time_active)	
@@ -103,7 +117,7 @@ nav
 				color: #fff
 				font-family: $ff-linux
 				font-size: 16px
-				&:after
+				&:before
 					content: ''
 					display: block
 					height: 3em
@@ -129,19 +143,35 @@ nav
 					
 					z-index: 2
 					
-				&:hover:after
+				&:hover:before
 					background-color: rgba(#72202a, .8)
-			&.active a:after
+			&.active a:before
 				background: #72202a
 
-				
-				
-			
+
+.block-search
+	background: #fafaf7 url(../img/icons/bg_pager.png) 0 0 repeat 
+	border-bottom: 1px solid #ededed
+	padding: 20px 10px
+	.form-search
+		width: 70%
+		margin: auto			
+		vertical-align: top
+		position: relative	
+		input[type="search"]
+			width: 100%
+			display: block
+			padding-right: 40px
+		input[type="submit"]
+			position: absolute
+			right: 0
+			top: 0
 
 
 
 .footer
-	background: #72202a url(../img/icons/bg_footer.png) 0 0 repeat 
+	background: #72202a url(../img/icons/bg_footer.png) 0 0 repeat
+	padding: 0 10px
 	p
 		display: inline-block
 		line-height: 30px

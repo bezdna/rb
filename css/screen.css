@@ -27,6 +27,11 @@ body { font-family: "linux_biolinum_oregular", Arial, sans-serif; font-weight: n
 a { color: white; }
 a:hover { color: #c38437; text-decoration: none; }
 
+input[type="text"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="password"], select, textarea { background-color: white; border-radius: none; border-width: 1px; border-color: gainsboro; border-style: solid; height: 28px; width: auto; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 3px 5px; line-height: 22px; display: inline-block; }
+
+input[type="submit"] { padding: 3px 5px; line-height: 22px; width: 40px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; height: 28px; background: url('../img/icons-sd7c3322230.png') 0 -477px no-repeat; display: inline-block; background-color: #78232e; font: 0/0 arial; vertical-align: top; }
+input[type="submit"]:hover { background: url('../img/icons-sd7c3322230.png') 0 -694px no-repeat; background-color: #78232e; }
+
 .l { width: 100%; display: inline-block; }
 .l .l-col1 { float: left; width: 20%; }
 .l .l-col2 { float: right; width: 70%; }
@@ -46,20 +51,22 @@ header { background: #72202a url(../img/icons/bg_header.png) 0 0 repeat; }
 header .super-top { overflow: hidden; }
 
 .logo { float: left; padding: 15px 20px; }
-.logo a { background: url('../img/icons-s6bbe0cfc23.png') 0 0 no-repeat; width: 239px; height: 75px; display: block; }
+@media only screen and (max-width: 1000px) { .logo { padding: 15px 10px; } }
+.logo a { background: url('../img/icons-sd7c3322230.png') 0 0 no-repeat; width: 239px; height: 75px; display: block; }
 
 .cabinet { float: right; padding: 20px; }
+@media only screen and (max-width: 1000px) { .cabinet { padding: 20px 10px; } }
 .cabinet a { position: relative; display: block; padding-top: 30px; }
-.cabinet a:hover:before { background: url('../img/icons-s6bbe0cfc23.png') 0 -446px no-repeat; width: 25px; height: 21px; }
-.cabinet a:before { background: url('../img/icons-s6bbe0cfc23.png') 0 -415px no-repeat; width: 25px; height: 21px; content: ""; display: block; top: 0; left: 50%; margin-left: -10px; position: absolute; }
+.cabinet a:hover:before { background: url('../img/icons-sd7c3322230.png') 0 -446px no-repeat; width: 25px; height: 21px; }
+.cabinet a:before { background: url('../img/icons-sd7c3322230.png') 0 -415px no-repeat; width: 25px; height: 21px; content: ""; display: block; top: 0; left: 50%; margin-left: -10px; position: absolute; }
 
-.menu-top { overflow: hidden; }
-.menu-top li { display: inline-block; }
-.menu-top li a { font-size: 18px; text-decoration: none; vertical-align: middle; padding: 35px 5px; display: inline-block; }
-.menu-top li a:hover { text-decoration: none; border-bottom: none; background-color: rgba(0, 0, 0, 0.3); }
-.menu-top li a:hover:before { background: url('../img/icons-s6bbe0cfc23.png') 0 -477px no-repeat; width: 39px; height: 39px; }
-.menu-top li a:before { content: ""; background: url('../img/icons-s6bbe0cfc23.png') 0 -170px no-repeat; width: 39px; height: 39px; padding-right: 5px; display: inline-block; vertical-align: middle; }
-.menu-top li.active a:before { background: url('../img/icons-s6bbe0cfc23.png') 0 -477px no-repeat; width: 39px; height: 39px; }
+.menu-top { overflow: hidden; text-align: center; font: 0/0 Arial; }
+.menu-top li { display: inline-block; max-width: 180px; }
+.menu-top li a { font-size: 18px; font-family: "linux_biolinum_oregular"; text-decoration: none; vertical-align: middle; padding: 35px 5px 35px 50px; display: inline-block; position: relative; display: table-cell; height: 2.2em; line-height: 1; }
+.menu-top li a:hover { text-decoration: none; border-bottom: none; background-color: #621a26; }
+.menu-top li a:hover:before { background: url('../img/icons-sd7c3322230.png') 0 -508px no-repeat; width: 39px; height: 39px; }
+.menu-top li a:before { content: ""; background: url('../img/icons-sd7c3322230.png') 0 -170px no-repeat; width: 39px; height: 39px; display: inline-block; vertical-align: middle; position: absolute; left: 5px; top: 50%; margin-top: -20px; }
+.menu-top li.active a:before { background: url('../img/icons-sd7c3322230.png') 0 -508px no-repeat; width: 39px; height: 39px; }
 
 nav ul { display: table; width: 100%; table-layout: fixed; height: 150px; }
 nav ul li { display: table-cell; vertical-align: bottom; background-position: center top; background-repeat: no-repeat; position: relative; }
@@ -74,12 +81,17 @@ nav ul li.ordena { background-image: url(../img/bg_menu/ordena.jpg); }
 nav ul li.kult { background-image: url(../img/bg_menu/kult.jpg); }
 nav ul li.raznoe { background-image: url(../img/bg_menu/raznoe.jpg); }
 nav ul li a { display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; color: white; font-family: "linux_biolinum_oregular"; font-size: 16px; }
-nav ul li a:after { content: ""; display: block; height: 3em; position: absolute; bottom: 0; background-color: rgba(0, 0, 0, 0.3); width: 100%; z-index: 1; }
+nav ul li a:before { content: ""; display: block; height: 3em; position: absolute; bottom: 0; background-color: rgba(0, 0, 0, 0.3); width: 100%; z-index: 1; }
 nav ul li a:hover { border-bottom: none; }
 nav ul li a span { position: absolute; bottom: 0; color: white; display: block; padding: 3px; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; vertical-align: bottom; z-index: 2; }
-nav ul li a:hover:after { background-color: rgba(114, 32, 42, 0.8); }
-nav ul li.active a:after { background: #72202a; }
+nav ul li a:hover:before { background-color: rgba(114, 32, 42, 0.8); }
+nav ul li.active a:before { background: #72202a; }
 
-.footer { background: #72202a url(../img/icons/bg_footer.png) 0 0 repeat; }
+.block-search { background: #fafaf7 url(../img/icons/bg_pager.png) 0 0 repeat; border-bottom: 1px solid #ededed; padding: 20px 10px; }
+.block-search .form-search { width: 70%; margin: auto; vertical-align: top; position: relative; }
+.block-search .form-search input[type="search"] { width: 100%; display: block; padding-right: 40px; }
+.block-search .form-search input[type="submit"] { position: absolute; right: 0; top: 0; }
+
+.footer { background: #72202a url(../img/icons/bg_footer.png) 0 0 repeat; padding: 0 10px; }
 .footer p { display: inline-block; line-height: 30px; margin-right: 20px; }
 .footer p.copyright { color: #130406; font-family: "LinBiolinumO"; font-size: 16px; }

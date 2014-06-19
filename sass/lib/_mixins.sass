@@ -1,16 +1,29 @@
 // responsive example, edit or remove
-$breaksmall: 500px
-
-$breaklarge: 1180px
+$mobile-small: 420px
+$mobile:       520px
+$tablet-small: 768px
+$tablet:      1000px
+$tablet-big:  1280px 
+$desktop:     1920px
 
 =r($media)
-	@if $media == pda
-		// narrower than $width
-		@media only screen and (max-width: $breaksmall)
+	@if $media == mobile-small
+		@media only screen and (max-width: $mobile-small)
 			@content
-	@else if $media == wide
-		// wider than $width
-		@media only screen and (min-width: $breaklarge)
+	@else if $media == mobile
+		@media only screen and (max-width: $mobile)
+			@content
+	@else if $media == tablet-small
+		@media only screen and (max-width: $tablet-small)
+			@content
+	@else if $media == tablet
+		@media only screen and (max-width: $tablet)
+			@content
+	@else if $media == tablet-big
+		@media only screen and (max-width: $tablet-big)
+			@content
+	@else if $media == desktop
+		@media only screen and (max-width: $desktop)
 			@content
 
 =fs($sizeValue: 16)

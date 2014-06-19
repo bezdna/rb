@@ -57,3 +57,38 @@ a
 		text-decoration: none
 		// border-bottom: 1px solid #c38437
 		// border-bottom: 1px solid rgba(#c38437, 0.6)
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="password"],
+select,
+textarea
+	background-color: #fff
+	border-radius: none
+	border-width: 1px
+	border-color: #dcdcdc
+	border-style: solid
+	height: 28px
+	width: auto
+	@include box-sizing(border-box)
+	padding: 3px 5px
+	line-height: 22px
+	display: inline-block
+input[type="submit"]
+	padding: 3px 5px
+	line-height: 22px
+	width: 40px
+	@include box-sizing(border-box)
+	height: 28px
+	+si(icon-search)
+	display: inline-block
+	background-color: #78232e
+	font: 0/0 arial
+	vertical-align: top
+
+	&:hover
+		+si(icon-search_hover)
+		background-color: #78232e
+button[type="submit"]
