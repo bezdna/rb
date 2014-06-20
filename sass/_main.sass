@@ -1,7 +1,10 @@
 // Normally mainpage styles
 
 // VARS
-
+body
+	min-width: 960px
+	background: #fff
+	
 header
 	background: #72202a url(../img/icons/bg_header.png) 0 0 repeat
 	.super-top
@@ -218,21 +221,21 @@ nav
 			top: 0
 .main
 	.wrapper
-		max-width: 1400px
+		max-width: 1920px
 		width: 100%
 		+box-sizing(border-box)
 		margin: auto
-		padding: 2em 110px
+		padding: 2em 8%
 		color: #646464
 		font-size: 16px
 		line-height: 1.2
 		+wysiwyg
-		+r(tablet-big)
-			padding-left: 70px
-			padding-right: 70px
-		+r(tablet)
-			padding-left: 30px
-			padding-right: 30px
+		// +r(tablet-big)
+		// 	padding-left: 70px
+		// 	padding-right: 70px
+		// +r(tablet)
+		// 	padding-left: 30px
+		// 	padding-right: 30px
 	h2
 		color: #ab7f31
 		font-family: $ff-linux

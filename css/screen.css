@@ -137,6 +137,8 @@ html, body { height: 100%; }
 
 .wrapper { max-width: 1920px; margin: auto; }
 
+body { min-width: 960px; background: white; }
+
 header { background: #72202a url(../img/icons/bg_header.png) 0 0 repeat; }
 header .super-top { overflow: hidden; }
 
@@ -194,7 +196,7 @@ nav ul li.active a:before { background: #72202a; }
 .block-search .form-search input[type="search"] { width: 100%; display: block; padding-right: 40px; }
 .block-search .form-search input[type="submit"] { position: absolute; right: 0; top: 0; }
 
-.main .wrapper { max-width: 1400px; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: auto; padding: 2em 110px; color: #646464; font-size: 16px; line-height: 1.2; }
+.main .wrapper { max-width: 1920px; width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin: auto; padding: 2em 8%; color: #646464; font-size: 16px; line-height: 1.2; }
 .main .wrapper ul, .main .wrapper ol { margin: 1em auto; }
 .main .wrapper b, .main .wrapper strong { font-weight: 700; }
 .main .wrapper i, .main .wrapper em { font-style: italic; }
@@ -203,8 +205,6 @@ nav ul li.active a:before { background: #72202a; }
 .main .wrapper ul ul, .main .wrapper ol ul { list-style-type: circle; list-style-position: outside; margin: 0 auto 0 2.3em; }
 .main .wrapper ol ol, .main .wrapper ul ol { list-style-type: decimal; list-style-position: outside; margin: 0 auto 0 2.3em; }
 .main .wrapper blockquote { width: 80%; margin: 20px auto; display: block; }
-@media only screen and (max-width: 1280px) { .main .wrapper { padding-left: 70px; padding-right: 70px; } }
-@media only screen and (max-width: 1000px) { .main .wrapper { padding-left: 30px; padding-right: 30px; } }
 .main h2 { color: #ab7f31; font-family: "linux_biolinum_oregular"; font-size: 18px; border-bottom: 1px solid #cccccc; margin-bottom: 1em; }
 .main p { color: #646464; font-size: 16px; padding-bottom: 1em; }
 .main p + h2 { padding-top: 1em; }
