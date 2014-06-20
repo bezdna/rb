@@ -139,7 +139,8 @@ nav
 			background-position: center top
 			background-repeat: no-repeat
 			position: relative
-			
+			+r(desktop-big)
+				+background-size(cover)
 			&.zivopis
 				background-image: url(../img/bg_menu/zivopis.jpg)
 			&.serebro
@@ -179,33 +180,69 @@ nav
 					background-color: rgba(0,0,0, .3)
 					width: 100%
 					z-index: 1
+
 				&:hover
 					border-bottom: none
 
 				span
 					position: absolute
 					bottom: 0
-					
 					color: #fff
 					display: block
-					// height: 2.8em
 					padding: 3px
 					width: 100%
 					@include box-sizing(border-box)
 					vertical-align: bottom
-					
 					z-index: 2
-					
+
 				&:hover:before
 					background-color: rgba(#72202a, .8)
-			&.active a:before
-				background: #72202a
-
-
-.block-search
+			&.active
+				a:before
+					background: #72202a
+				a:after
+					content: ''
+					position: absolute
+					top: 100%
+					display: block
+					left: 50%
+					margin-left: -10px
+					+arr(20,12, #72202a, b)
+.back
+	display: inline-block
+	width: 180px
+	padding: 3px 10px
+	background-color: #72202a
+	color: #fff
+	position: relative
+	top: -2em
+	height: 30px
+	text-decoration: none
+	line-height: 26px
+	font-family: $ff-itc
+	vertical-align: middle
+	&:before
+		content: '‹'
+		font-size: 2.4em
+		line-height: 16px
+		display: inline-block
+		padding-right: 5px
+		position: relative
+		top: 3px
+	&:after
+		content: ''
+		position: absolute
+		top: -12px
+		display: block
+		left: 50%
+		margin-left: -10px
+		+arr(20,12, #72202a, t)
+		z-index: 1
+.block-bg
 	background: #fafaf7 url(../img/icons/bg_pager.png) 0 0 repeat 
 	border-bottom: 1px solid #ededed
-	padding: 20px 10px
+	border-top: 1px solid #ededed
+.block-search
 	.form-search
 		width: 70%
 		margin: auto			
@@ -214,7 +251,7 @@ nav
 		input[type="search"]
 			width: 100%
 			display: block
-			padding-right: 40px
+			padding-right: 45px
 		input[type="submit"]
 			position: absolute
 			right: 0
@@ -266,6 +303,21 @@ nav
 			border-right: 1px solid #ccc
 			padding-right: 20px
 			+box-sizing(border-box)
+			.info	
+				overflow: hidden
+				h2
+					color: #ab7f31
+					font-family: $ff-linux
+					&:before
+						display: none
+				h4
+					color: #ab7f31
+					font-family: $ff-linux
+					font-weight: 400
+				p
+					a
+						color: #77232d		
+
 			h2
 				border-bottom: none
 				vertical-align: middle
@@ -323,16 +375,17 @@ nav
 .catalog ul.catalog-list
 	list-style: none
 	margin: 0
+	margin-left: -20px
+	margin-right: -20px
 	+r(tablet)
-		margin-left: -20px
-		margin-right: -20px
+		
 	li
 		display: inline-block
 		vertical-align: top
 		width: 50%
 		margin: -0.135em
 		+box-sizing(border-box)
-		padding: 0 20px
+		padding: 0 20px 30px
 		img
 			float: left
 			margin: 0 1em 1em 0
@@ -355,7 +408,26 @@ nav
 				+clr
 			p
 				clear: both
-				
+.main ul.pager
+	text-align: center
+	margin: 0
+	padding-top: 5px
+	li
+		display: inline-block				
+		font-size: 16px
+		line-height: 32px
+		vertical-align: middle
+		width: 0.7em
+		&.pager-back,
+		&.pager-next
+			font-size: 3em
+			line-height: 32px
+			width: 0.3em
+		a
+			color: #77232d
+			text-decoration: none
+			display: inline-block
+			// width: 1.2em
 				
 
 		
