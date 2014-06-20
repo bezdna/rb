@@ -17,21 +17,41 @@ header
 		display: block
 .cabinet
 	float: right
-	padding: 20px
+	padding: 15px
+	font-family: $ff-linux
+	font-size: 16px
 	+r(tablet)
-		padding: 20px 10px
+		padding: 15px 10px
 	a
 		position: relative
 		display: block
-		padding-top: 30px
+		padding-top: 35px
+		width: 80px
+		text-align: center
+		z-index: 1
+		text-decoration: none
+		
 		&:hover
+			color: #fff
 			&:before
-				+s(lk_hover)
+			&:after
+				content: ''
+				display: block
+				width: 100%
+				height: 100%
+				position: absolute
+				z-index: -1
+				left: 0
+				top: 0
+				text-decoration: none
+				border-bottom: none
+				background-color: #621a26	
+				color: #fff
 		&:before
 			+s(lk)
 			content: ''
 			display: block
-			top: 0
+			top: 10px
 			left: 50%
 			margin-left: -10px
 			position: absolute
@@ -46,33 +66,63 @@ header
 		max-width: 180px
 		a
 			font-size: 18px
-			font-family: $ff-linux
+			font-family: $ff-itc
+			text-transform: uppercase
+			font-weight: 400
 			text-decoration: none
 			vertical-align: middle
 			padding: 35px 5px 35px 50px
 			display: inline-block
 			position: relative
 			display: table-cell
+			text-align: left
 			height: 2.2em
 			line-height: 1
+			+r(tablet)
+				font-size: 16px
+			+r(950px)
+				padding-left: 5px
+				max-width: 120px
+				&:before
+					display: none
+					
+
 			&:hover
 				text-decoration: none
 				border-bottom: none
 				background-color: #621a26	
+				color: #fff
 				&:before
-					+s(icon-time_active)	
+					// +s(icon-time_active)	
 			&:before
 				content: ''
-				+s(icon-time)
 				display: inline-block
 				vertical-align: middle
 				position: absolute
 				left: 5px
 				top: 50%
 				margin-top: -20px
+				+r(950px)
+					display: none
+					
+			&.icon-info:before
+				+s(icon-info)
+			&.icon-article:before
+				+s(icon-article)
+			&.icon-time:before
+				+s(icon-time)
+			&.icon-molotok:before
+				+s(icon-molotok)
 		&.active a
-			&:before
-				+s(icon-time_active)	
+			color: #c38437
+			&.icon-info:before
+				+s(icon-info_active)
+			&.icon-article:before
+				+s(icon-article_active)
+			&.icon-time:before
+				+s(icon-time_active)
+			&.icon-molotok:before
+				+s(icon-molotok_active)
 nav
 	ul
 		display: table
@@ -166,7 +216,146 @@ nav
 			position: absolute
 			right: 0
 			top: 0
+.main
+	.wrapper
+		max-width: 1400px
+		width: 100%
+		+box-sizing(border-box)
+		margin: auto
+		padding: 2em 110px
+		color: #646464
+		font-size: 16px
+		line-height: 1.2
+		+wysiwyg
+		+r(tablet-big)
+			padding-left: 70px
+			padding-right: 70px
+		+r(tablet)
+			padding-left: 30px
+			padding-right: 30px
+	h2
+		color: #ab7f31
+		font-family: $ff-linux
+		font-size: 18px
+		border-bottom: 1px solid #ccc
+		margin-bottom: 1em
+	p
+		color: #646464
+		font-size: 16px
+		padding-bottom: 1em
+		&+h2
+			padding-top: 1em
+	li
+		padding-bottom: 0.4em
+	.center
+		text-align: center
+		
+	img.logo_intext
+		padding: 2px 0 20px
+		display: inline-block
+	article
+		position: relative
+		margin-bottom: 2em
+		+clr
+		.content
+			float: left
+			margin-right: 200px
+			border-right: 1px solid #ccc
+			padding-right: 20px
+			+box-sizing(border-box)
+			h2
+				border-bottom: none
+				vertical-align: middle
+				color: #77232d
+				font-family: $ff-itc
+				font-size: 24px
+				font-weight: 400
+				text-transform: uppercase
+				&:before
+					vertical-align: middle
+					content: ''
+					display: inline-block
+					+s(i_article)
+					padding-right: 5px
+					margin-top: -3px
+			h3
+				vertical-align: middle
+				color: #77232d
+				font-family: $ff-linux
+				font-size: 24px
+				line-height: 1.1
+				text-transform: uppercase
+				padding-bottom: 0.7em
+				font-weight: 400
+				.there
+					color: #636363
+					font-size: 16px
+					text-transform: none
+					
+			img.img-main
+				min-width: 100%
+				width: 100%
+				height: auto
+				margin-bottom: 1em
+			.img-small
+				float: left
+				margin: 0 1.5em 1.5em 0
+				
 
+		aside
+			position: absolute
+			right: 0
+			width: 160px
+			padding: 0 20px
+			color: #ab7f31
+			font-family: "Myriad Pro"
+			font-size: 16px
+			&> div
+				padding-bottom: 1em
+			a
+				color: #77232d
+			.value
+				padding-top: 0.2em
+				color: #636363
+.catalog ul.catalog-list
+	list-style: none
+	margin: 0
+	+r(tablet)
+		margin-left: -20px
+		margin-right: -20px
+	li
+		display: inline-block
+		vertical-align: top
+		width: 50%
+		margin: -0.135em
+		+box-sizing(border-box)
+		padding: 0 20px
+		img
+			float: left
+			margin: 0 1em 1em 0
+		.info
+			overflow: hidden
+			a
+				color: #77232d
+				&:hover
+					color: #ac7f31
+			h2
+				color: #77232d
+				display: inline
+				border-bottom: none
+				margin-bottom: 0
+			.sku
+				color: #636363
+				display: inline
+				
+				padding-left: 6px
+				+clr
+			p
+				clear: both
+				
+				
+
+		
 
 
 .footer
