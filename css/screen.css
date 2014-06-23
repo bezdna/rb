@@ -65,7 +65,7 @@ header .super-top { overflow: hidden; }
 .cabinet a:before { background: url('../img/icons-sb943918653.png') 0 -415px no-repeat; width: 25px; height: 21px; content: ""; display: block; top: 10px; left: 50%; margin-left: -10px; position: absolute; }
 
 .menu-top { overflow: hidden; text-align: center; font: 0/0 Arial; }
-.menu-top li { display: inline-block; max-width: 180px; }
+.menu-top li { display: inline-block; max-width: 250px; width: 25%; }
 .menu-top li a { font-size: 18px; font-family: "CharterITC-Bold"; text-transform: uppercase; font-weight: 400; text-decoration: none; vertical-align: middle; padding: 35px 5px 35px 50px; display: inline-block; position: relative; display: table-cell; text-align: left; height: 2.2em; line-height: 1; }
 @media only screen and (max-width: 1000px) { .menu-top li a { font-size: 16px; } }
 @media only screen and (max-width: 950px) { .menu-top li a { padding-left: 5px; max-width: 120px; }
@@ -160,9 +160,9 @@ nav ul li.active a:after { content: ""; position: absolute; top: 100%; display: 
 .catalog ul.catalog-list li .info p { clear: both; }
 
 .main ul.pager { text-align: center; margin: 0; padding-top: 5px; }
-.main ul.pager li { display: inline-block; font-size: 16px; line-height: 32px; vertical-align: middle; width: 0.7em; }
-.main ul.pager li.pager-back, .main ul.pager li.pager-next { font-size: 3em; line-height: 32px; width: 0.3em; }
-.main ul.pager li a { color: #77232d; text-decoration: none; display: inline-block; }
+.main ul.pager li { display: inline-block; font-size: 16px; line-height: 24px; vertical-align: middle; width: 0.7em; margin-bottom: 0; padding-bottom: 0; }
+.main ul.pager li.pager-back, .main ul.pager li.pager-next { font-size: 3em; line-height: 24px; width: 0.3em; position: relative; top: -2px; }
+.main ul.pager li a { color: #77232d; text-decoration: none; display: block; padding: 3px; vertical-align: middle; }
 
 .footer { background: #72202a url(../img/icons/bg_footer.png) 0 0 repeat; padding: 0 10px; }
 .footer p { display: inline-block; line-height: 30px; margin-right: 20px; }
