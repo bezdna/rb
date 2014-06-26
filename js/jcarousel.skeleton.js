@@ -10,10 +10,8 @@
 
     $(function() {
         // Setup the carousels. Adjust the options for both carousels here.
-        var carouselStage      = $('.jcarousel').jcarousel();
-        var carouselNavigation = $('.carousel-navigation').jcarousel({
-    center: true
-});
+        var carouselStage      = $('.jcarousel').jcarousel({wrap: 'both'});
+        var carouselNavigation = $('.carousel-navigation').jcarousel({wrap: 'both'});
 
         // We loop through the items of the navigation carousel and set it up
         // as a control for an item from the stage carousel.
