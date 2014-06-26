@@ -23,7 +23,25 @@
 						<a href="index.html"></a>
 					</div>
 					<div class="cabinet">
-						<a href="lk.html"  class="icon-cabinet">Личный кабинет</a>
+						<a href="#form-login"  class="icon-cabinet popup-with-form">Личный кабинет</a>
+						<!-- form itself -->
+						<form id="form-login" class="white-popup-block mfp-hide">
+							<h1>Вход в личный кабинет</h1>
+							<fieldset style="border:0;">
+								<ol>
+									<li>
+										<input id="login" name="login" type="text" placeholder="Логин" required="">
+									</li>
+									<li>										
+										<input id="password" name="password" type="password" placeholder="Пароль" required="">
+									</li>
+									<li>
+										<button class="button">Войти</button>
+										<a href="#" class="register">Зарегестриваться</a>
+									</li>
+								</ol>
+							</fieldset>
+						</form>
 					</div>
 					<ul class="menu-top">
 						<li><a href="about.html" class="icon-about"><span>О проекте</span></a></li>
@@ -68,14 +86,45 @@
                 </div>
 
                 <!-- Prev/next controls -->
-                <a href="#" class="jcarousel-control-prev">&lsaquo; Prev</a>
-                <a href="#" class="jcarousel-control-next">Next &rsaquo;</a>
+                <a href="#" class="prev jcarousel-control-prev">&lsaquo;</a>
+                <a href="#" class="next jcarousel-control-next">&rsaquo;</a>
 
                 <!-- Pagination -->
                 <p class="jcarousel-pagination">
                     <!-- Pagination items will be generated in here -->
                 </p>
-
+				<div class="navigation">
+                    <a href="#" class="prev prev-navigation">&lsaquo;</a>
+                    <a href="#" class="next next-navigation">&rsaquo;</a>
+                    <div class="carousel carousel-navigation">
+                        <ul>
+                            <li><img src="img/main_1_thumb.jpg" alt="">
+                            	<p>SILVER CHEST WITH GOLD CARVING</p>
+                            </li>
+                            <li><img src="img/main_2_thumb.jpg" alt="">
+                            	<p>GOLD CARVING</p>
+                            </li>
+                            <li><img src="img/main_3_thumb.jpg" alt="">
+                            	<p>SILVER CHEST </p>
+                            </li>
+                            <li><img src="img/main_1_thumb.jpg" alt="">
+                            	<p>SILVER CHEST WITH GOLD CARVING1</p>
+                            </li>
+                            <li><img src="img/main_2_thumb.jpg" alt="">
+                            	<p>SILVER CARVING2</p>
+                            </li>
+                            <li><img src="img/main_3_thumb.jpg" alt="">
+                            	<p>SILVER CHEST WITHCARVING2</p>
+                            </li>
+                            <li><img src="img/main_2_thumb.jpg" alt="">
+                            	<p>SILVER CHEST WITH GOLD CARVING3</p>
+                            </li>
+                            <li><img src="img/main_3_thumb.jpg" alt="">
+                            	<p>SILVER GOLD CARVING4</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
 		</div>
 
@@ -91,7 +140,12 @@
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
 
+
 <script type="text/javascript" src="js/jcarousel.skeleton.js"></script>
+<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="js/center.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+
 <script>
 	$( document ).ready(function() {
 	    console.log( "ready!" );
@@ -100,6 +154,9 @@
 	    console.log(h_wrap, h_header);
 	    var h = $('.jcarousel-wrapper').height( h_wrap - h_header - 30);
 	    $('.jcarousel li img').height( h_wrap - h_header - 30);
+	    $('.jcarousel').on('click', 'li', function() {
+		    $('.jcarousel').jcarousel('center', this);
+		});
 	    console.log(h);
 	    $(window).resize(function() {
 		    var h_wrap = $('.page-wrap').height();
@@ -107,6 +164,7 @@
 		    console.log(h_wrap, h_header);
 		    var h = $('.jcarousel-wrapper').height( h_wrap - h_header - 30);
 		    $('.jcarousel li img').height( h_wrap - h_header - 30);
+		    $('.jcarousel').jcarousel('reload');
 		});
 	});
 </script>
