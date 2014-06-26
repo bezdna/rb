@@ -63,11 +63,14 @@ header
 	text-align: center
 	font: 0/0 Arial
 	li
-		display: table-cell
+		display: inline-block
 		vertical-align: top
 		
 		max-width: 200px
 		width: 25%
+		+max-screen(1180px)
+			display: table-cell
+			
 		a
 			font-size: 18px
 			font-family: $ff-itc
@@ -249,7 +252,7 @@ nav
 		width: 100%
 		+box-sizing(border-box)
 		margin: auto
-		padding: 2em 8%
+		padding: 2em 11%
 		color: #646464
 		font-size: 16px
 		line-height: 1.2
