@@ -8,6 +8,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<link rel="stylesheet" type="text/css" href="css/jcarousel.skeleton.css">
 	<script src="js/html5shiv.js"></script>
 </head>
 <body>
@@ -50,14 +51,30 @@
 			
 		</header>
 		<div class="main">
-			<div class="block-bg block-search">
-				<div class="wrapper">
-					<form action="#" class="form-search">
-						<input class="" type="search" name="" id="" placeholder="Поиск по разделу">
-						<input type="submit" value="Поиск">
-					</form>
-				</div>
-			</div>
+			<div class="jcarousel-wrapper">
+
+                <!-- Carousel -->
+                <div class="jcarousel">
+                    <ul>
+                        <li><img src="img/main_1.jpg" alt=""></li>
+                        <li><img src="img/main_2.jpg" alt=""></li>
+                        <li><img src="img/main_3.jpg" alt=""></li>
+                        <li><img src="img/main_1.jpg" alt=""></li>
+                        <li><img src="img/main_2.jpg" alt=""></li>
+                        <li><img src="img/main_3.jpg" alt=""></li>
+                    </ul>
+                </div>
+
+                <!-- Prev/next controls -->
+                <a href="#" class="jcarousel-control-prev">&lsaquo; Prev</a>
+                <a href="#" class="jcarousel-control-next">Next &rsaquo;</a>
+
+                <!-- Pagination -->
+                <p class="jcarousel-pagination">
+                    <!-- Pagination items will be generated in here -->
+                </p>
+
+            </div>
 		</div>
 
 	</div>
@@ -69,6 +86,21 @@
 	</footer>
 </div>
 <!-- END out-->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
 
+<script type="text/javascript" src="js/jcarousel.skeleton.js"></script>
+<script>
+	$( document ).ready(function() {
+	    console.log( "ready!" );
+	    var h_wrap = $('.page-wrap').height();
+	    var h_header = $('header').height();
+	    console.log(h_wrap, h_header);
+	    var h = $('.jcarousel-wrapper').height( h_wrap - h_header - 30);
+	    $('.jcarousel li img').height( h_wrap - h_header - 30);
+	    console.log(h);
+	    
+	});
+</script>
 </body>
 </html>
