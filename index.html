@@ -62,6 +62,8 @@
                         <li><img src="img/main_1.jpg" alt=""></li>
                         <li><img src="img/main_2.jpg" alt=""></li>
                         <li><img src="img/main_3.jpg" alt=""></li>
+                        <li><img src="img/main_2.jpg" alt=""></li>
+                        <li><img src="img/main_3.jpg" alt=""></li>
                     </ul>
                 </div>
 
@@ -99,7 +101,13 @@
 	    var h = $('.jcarousel-wrapper').height( h_wrap - h_header - 30);
 	    $('.jcarousel li img').height( h_wrap - h_header - 30);
 	    console.log(h);
-	    
+	    $(window).resize(function() {
+		    var h_wrap = $('.page-wrap').height();
+		    var h_header = $('header').height();
+		    console.log(h_wrap, h_header);
+		    var h = $('.jcarousel-wrapper').height( h_wrap - h_header - 30);
+		    $('.jcarousel li img').height( h_wrap - h_header - 30);
+		});
 	});
 </script>
 </body>
