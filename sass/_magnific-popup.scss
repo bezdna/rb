@@ -42,7 +42,7 @@ $mfp-include-arrows:                  true !default; // include styles for nav a
 $mfp-controls-opacity:                0.65 !default;
 $mfp-controls-color:                  #FFF !default;
 $mfp-controls-border-color:           #3F3F3F !default;
-$mfp-inner-close-icon-color:          #333 !default;
+$mfp-inner-close-icon-color:          #fff !default;
 $mfp-controls-text-color:             #CCC !default; // Color of preloader and "1 of X" indicator
 $mfp-controls-text-color-hover:       #FFF !default;
 $mfp-IE7support:                      true !default; // Very basic IE7 support
@@ -274,9 +274,9 @@ button {
 
 // Close icon
 .mfp-close {
-  width: 44px;
-  height: 44px;
-  line-height: 44px;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
 
   position: absolute;
   right: 0;
@@ -297,9 +297,11 @@ button {
   &:hover,
   &:focus {
     opacity: 1;
+    color: #ab7f31;
     @if $mfp-IE7support {
       filter: unquote("alpha(opacity=#{1*100})");
     }
+    color: #ab7f31;
   }
 
   &:active {
@@ -319,6 +321,10 @@ button {
     text-align: right;
     padding-right: 6px;
     width: 100%;
+    &:hover {
+      color: #ab7f31;
+    }
+
   }
 }
 

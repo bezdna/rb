@@ -16,7 +16,7 @@ that the width is big enough to contain all items.
 */
 .jcarousel ul {
     width: 20000em;
-    position: relative;
+    position: absolute;
 
     /* Optional, required in this case since it's a <ul> element */
     list-style: none;

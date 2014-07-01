@@ -68,7 +68,7 @@ header
 		display: inline-block
 		vertical-align: top
 		
-		max-width: 200px
+		max-width: 195px
 		width: 25%
 		+max-screen(1180px)
 			display: table-cell
@@ -91,6 +91,7 @@ header
 			
 			+r(tablet)
 				font-size: 16px
+				padding: 37px 5px 37px 50px
 			+r(950px)				
 				max-width: 120px
 				&:before
@@ -114,8 +115,6 @@ header
 				margin-top: -20px
 				font-family: 'icomoon'
 				font-size: 40px
-				+r(950px)
-					// display: none
 		&.active a
 			color: #c38437
 nav
@@ -211,16 +210,17 @@ nav
 	height: 30px
 	text-decoration: none
 	line-height: 26px
-	font-family: $ff-itc
+	font-family: $ff-linux
+	font-size: 16px
 	vertical-align: middle
 	&:before
 		content: '‹'
-		font-size: 2.4em
+		font-size: 2.5em
 		line-height: 16px
 		display: inline-block
 		padding-right: 5px
 		position: relative
-		top: 3px
+		top: 7px
 	&:after
 		content: ''
 		position: absolute
@@ -248,6 +248,9 @@ nav
 			position: absolute
 			right: 0
 			top: 0
+		&+.pager 
+			margin-top: 20px
+			margin-bottom: -10px
 .main
 	.wrapper
 		max-width: 1920px
@@ -295,6 +298,8 @@ nav
 			border-right: 1px solid #ccc
 			padding-right: 20px
 			+box-sizing(border-box)
+			+min-screen(1180px)
+				margin-right: 280px
 			.info	
 				overflow: hidden
 				h2
@@ -313,22 +318,34 @@ nav
 						color: #77232d		
 
 			h2
-				border-bottom: none
 				vertical-align: middle
 				color: #ab7f31
-				font-family: $ff-itc
+				font-family: $ff-linux
 				font-size: 24px
-				font-weight: 400
+				line-height: 1.1
 				text-transform: uppercase
+				padding-bottom: 0.7em
+				font-weight: 400
 				&:before
 					vertical-align: middle
-					content: ''
 					display: inline-block
-					+s(i_article)
 					padding-right: 5px
 					margin-top: -3px
+					display: inline-block
+					vertical-align: middle					
+					font-family: 'icomoon'
+					// font-size: 40px
 				a
+					font-family: $ff-linux
 					text-decoration: none
+					&:before
+						vertical-align: middle
+						display: inline-block
+						padding-right: 5px
+						margin-top: -3px
+						display: inline-block
+						vertical-align: middle					
+						font-family: 'icomoon'
 			h3
 				vertical-align: middle
 				color: #ab7f31
@@ -339,7 +356,17 @@ nav
 				padding-bottom: 0.7em
 				font-weight: 400
 				a
+					font-family: $ff-linux
 					text-decoration: none
+					&:before
+						vertical-align: middle
+						display: inline-block
+						padding-right: 5px
+						margin-top: -3px
+						display: inline-block
+						vertical-align: middle					
+						font-family: 'icomoon'
+
 				.there
 					color: #636363
 					font-size: 16px
@@ -350,7 +377,10 @@ nav
 				width: 100%
 				height: auto
 				margin-bottom: 1em
-			.img-small
+			&>a
+				float: left
+				margin: 0 1.5em 1.5em 0
+			&> .img-small
 				float: left
 				margin: 0 1.5em 1.5em 0
 				
@@ -364,6 +394,8 @@ nav
 			color: #ab7f31
 			font-family: "Myriad Pro"
 			font-size: 16px
+			+min-screen(1180px)
+				width: 280px
 			&> div
 				padding-bottom: 1em
 			a
@@ -395,14 +427,24 @@ nav
 				&:hover
 					color: #ac7f31
 			h2
-				color: #77232d
-				display: inline
+				vertical-align: middle
+				color: #ab7f31
+				font-family: $ff-linux
+				font-size: 24px
+				line-height: 1.1
+				text-transform: uppercase
+				padding-bottom: 0.7em
+				font-weight: 400
 				border-bottom: none
 				margin-bottom: 0
+				display: inline
+				
+				a
+					text-decoration: none
 			.sku
 				color: #636363
 				display: inline
-				
+				line-height: 26px
 				padding-left: 6px
 				+clr
 			p
@@ -440,32 +482,43 @@ nav
 	position: absolute
 	bottom: 20px
 	left: 50%
-	margin-left: -250px
+	margin-left: -150px
 	width: 500px
-	padding: 0 20px
+	// padding: 0 20px
 	a
 		position: absolute
 		top: 50%
 		text-decoration: none
-		font-size: 30px
+		font-size: 40px
 		color: #77232d
 		line-height: 1
-		margin-top: 35px
+		margin-top: 30px
+		display: block
+		width: 40px
+		height: 40px
+		text-align: center
 	.prev-navigation
-		left: 5px
+		left: -40px
 	.next-navigation
-		right: -5px
+		right: -40px
 .carousel-navigation
-	overflow: hidden
-	padding: 100px 0px 0 0px
+	// overflow: hidden
+	padding: 100px 00px 0 00px
+	position: relative
+	width: 500px
 	ul
-		font-size: 0
-		width: 9900px
+		width: 2000em
 		position: relative
+		margin-left: -200px
+		// left: -200px
 	li
-		display: inline-block
+		float: left
 		position: relative
 		z-index: 1
+		font-size: 0
+		img
+			display: block
+			
 		&.active
 			&:before
 				content: ''
@@ -481,12 +534,14 @@ nav
 		&:hover
 			p
 				display: block
-				
+
 		img
 			width: 100px
 			height: 100px
 			cursor: pointer
 		p
+				
+			font-size: 14px
 			display: none
 			position: absolute
 			margin-top: -20px
@@ -503,7 +558,30 @@ nav
 				position: absolute
 				top: 100%
 				left: 70%
+.preview 
+	position: relative
+	display: inline-block
+	float: left
+	margin: 0 1.5em 1.5em 0
+	&:before
+		position: absolute
+		right: 7px
+		bottom: 7px
+		color: #fff
+		font-size: 1.4em
 
+
+#preview
+	position: absolute
+	border: 1px solid #ededed
+	background: #fff
+	padding: 10px
+	display: none
+	color: #fff
+	img
+		display: block
+		
+	
 
 .footer
 	background: #72202a url(../img/icons/bg_header.png) 0 0 repeat

@@ -11,8 +11,24 @@
     $(function() {
         // Setup the carousels. Adjust the options for both carousels here.
 
-        var carouselStage      = $('.jcarousel').jcarousel({wrap: 'both'});
-        var carouselNavigation = $('.carousel-navigation').jcarousel({wrap: 'both'});git 
+        var carouselStage      = $('.jcarousel').jcarousel({wrap: 'circular'});
+        var carouselNavigation = $('.carousel-navigation')
+        .jcarousel({
+            center: true,
+            wrap: 'circular', 
+            // visible: '5',
+            transitions: Modernizr.csstransitions ? {
+                transforms:   Modernizr.csstransforms,
+                transforms3d: Modernizr.csstransforms3d
+            } : false
+        })
+       
+        
+        .jcarouselAutoscroll({
+            interval: 4000,
+            target: '+=1',
+            autostart: true
+        });
 
         // We loop through the items of the navigation carousel and set it up
         // as a control for an item from the stage carousel.
@@ -32,9 +48,11 @@
                 })
                 .jcarouselControl({
                     target: target,
+                    // wrap: 'circular', 
+                    // visible: '5',
                     center: true,
                     carousel: carouselStage
-                });
+                })
         });
 
         // Setup controls for the stage carousel

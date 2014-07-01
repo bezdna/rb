@@ -42,6 +42,33 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-search-plus:before {
+    content: "\f00e";
+}
+.icon-about:before {
+    content: "\e601";
+}
+.icon-article:before {
+    content: "\e602";
+}
+.icon-cabinet:before {
+    content: "\e603";
+}
+.icon-event:before {
+    content: "\e604";
+}
+.icon-house:before {
+    content: "\e605";
+}
+.icon-spinner2:before {
+    content: "\e606";
+}
+.icon-spinner:before {
+    content: "\e607";
+}
+.icon-search:before {
+    content: "\e608";
+}
 .icon-check:before {
     content: "\f00c";
 }
@@ -123,27 +150,6 @@
 .icon-vk:before {
     content: "\f189";
 }
-.icon-about:before {
+.icon-article_cont:before {
     content: "\e600";
-}
-.icon-article:before {
-    content: "\e601";
-}
-.icon-cabinet:before {
-    content: "\e602";
-}
-.icon-event:before {
-    content: "\e603";
-}
-.icon-house:before {
-    content: "\e604";
-}
-.icon-spinner:before {
-    content: "\e605";
-}
-.icon-spinner2:before {
-    content: "\e606";
-}
-.icon-search:before {
-    content: "\e607";
 }

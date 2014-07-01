@@ -8,6 +8,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<script src="js/modernizr.js"></script>
 	<script src="js/html5shiv.js"></script>
 </head>
 <body>
@@ -22,7 +23,25 @@
 						<a href="index.html"></a>
 					</div>
 					<div class="cabinet">
-						<a href="lk.html" class="icon-cabinet">Личный кабинет</a>
+						<a href="#form-login"  class="icon-cabinet popup-with-form">Личный кабинет</a>
+						<!-- form itself -->
+						<form id="form-login" class="white-popup-block mfp-hide">
+							<h1>Вход в личный кабинет</h1>
+							<fieldset style="border:0;">
+								<ol>
+									<li>
+										<input id="login" name="login" type="text" placeholder="Логин" required="">
+									</li>
+									<li>										
+										<input id="password" name="password" type="password" placeholder="Пароль" required="">
+									</li>
+									<li>
+										<button class="button">Войти</button>
+										<a href="#" class="register">Зарегестриваться</a>
+									</li>
+								</ol>
+							</fieldset>
+						</form>
 					</div>
 					<ul class="menu-top">
 						<li><a href="about.html" class="icon-about"><span>О проекте</span></a></li>
@@ -70,7 +89,7 @@
 			<div class="wrapper">
 				<article>
 					<div class="content">
-						<h2 class="icon-article"><a href="article_1.html">РУССКАЯ ЖИВОПИСЬ ВТОРОЙ ПОЛОВИНЫ 19 ВЕКА.</a></h2>
+						<h2 ><a href="article_1.html" class="icon-article_cont">РУССКАЯ ЖИВОПИСЬ ВТОРОЙ ПОЛОВИНЫ 19 ВЕКА.</a></h2>
 						<img src="img/zivopis.jpg" alt="" class="img-main">
 						<p>If you want to purchase Russian antiques, be prepared. Know what you are looking for and what it will take to get it back to your home country. Peasant boy sitting under a tree playing a flute with a girl at his side within. If you want to purchase Russian antiques, be prepared. Know what you are looking for and what it will take to get it back to your home country. Peasant boy sitting under a tree playing a flute with a girl at his side within...</p>
 					</div>
@@ -86,7 +105,7 @@
 				</article>
 				<article>
 					<div class="content">
-						<h2 class="icon-article"><a href="article_1.html">РУССКАЯ ЖИВОПИСЬ ВТОРОЙ ПОЛОВИНЫ 19 ВЕКА.</a></h2>
+						<h2><a href="article_1.html"  class="icon-article_cont">РУССКАЯ ЖИВОПИСЬ ВТОРОЙ ПОЛОВИНЫ 19 ВЕКА.</a></h2>
 						<img src="img/zivopis.jpg" alt="" class="img-main">
 						<p>If you want to purchase Russian antiques, be prepared. Know what you are looking for and what it will take to get it back to your home country. Peasant boy sitting under a tree playing a flute with a girl at his side within. If you want to purchase Russian antiques, be prepared. Know what you are looking for and what it will take to get it back to your home country. Peasant boy sitting under a tree playing a flute with a girl at his side within...</p>
 					</div>
@@ -102,7 +121,7 @@
 				</article>
 				<article>
 					<div class="content">
-						<h2 class="icon-article"><a href="article_1.html">РУССКАЯ ЖИВОПИСЬ ВТОРОЙ ПОЛОВИНЫ 19 ВЕКА.</a></h2>
+						<h2 ><a href="article_1.html" class="icon-article_cont">РУССКАЯ ЖИВОПИСЬ ВТОРОЙ ПОЛОВИНЫ 19 ВЕКА.</a></h2>
 						<img src="img/zivopis.jpg" alt="" class="img-main">
 						<p>If you want to purchase Russian antiques, be prepared. Know what you are looking for and what it will take to get it back to your home country. Peasant boy sitting under a tree playing a flute with a girl at his side within. If you want to purchase Russian antiques, be prepared. Know what you are looking for and what it will take to get it back to your home country. Peasant boy sitting under a tree playing a flute with a girl at his side within...</p>
 					</div>
@@ -147,6 +166,13 @@
 	</footer>
 </div>
 <!-- END out-->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.jcarousel.js"></script>
 
+
+<script type="text/javascript" src="js/jcarousel.skeleton.js"></script>
+<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="js/center.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
 </body>
 </html>

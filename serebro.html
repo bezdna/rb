@@ -8,6 +8,8 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<script src="js/modernizr.js"></script>
+	<script src="js/html5shiv.js"></script>
 </head>
 <body>
 
@@ -21,7 +23,25 @@
 						<a href="index.html"></a>
 					</div>
 					<div class="cabinet">
-						<a href="lk.html" class="icon-cabinet">Личный кабинет</a>
+						<a href="#form-login"  class="icon-cabinet popup-with-form">Личный кабинет</a>
+						<!-- form itself -->
+						<form id="form-login" class="white-popup-block mfp-hide">
+							<h1>Вход в личный кабинет</h1>
+							<fieldset style="border:0;">
+								<ol>
+									<li>
+										<input id="login" name="login" type="text" placeholder="Логин" required="">
+									</li>
+									<li>										
+										<input id="password" name="password" type="password" placeholder="Пароль" required="">
+									</li>
+									<li>
+										<button class="button">Войти</button>
+										<a href="#" class="register">Зарегестриваться</a>
+									</li>
+								</ol>
+							</fieldset>
+						</form>
 					</div>
 					<ul class="menu-top">
 						<li><a href="about.html" class="icon-about"><span>О проекте</span></a></li>
@@ -54,8 +74,23 @@
 						<input class="" type="search" name="" id="" placeholder="Поиск по разделу">
 						<input type="submit" value="Поиск">
 					</form>
+					<ul class="pager">
+						<li class="pager-current first"><a title="Go to page 2" href="#">1</a></li>
+						<li class="pager-back"><a title="Go to next page" href="/search/node/Lorem?page=1">‹</a></li>
+						<li class="pager-item"><a title="Go to page 2" href="#">2</a></li>
+						<li class="pager-item"><a title="Go to page 3" href="#">3</a></li>
+						<li class="pager-current">4</li>
+						<li class="pager-item"><a title="Go to page 5" href="#">5</a></li>
+						<li class="pager-item"><a title="Go to page 6" href="#">6</a></li>
+						<li class="pager-item"><a title="Go to page 7" href="#">7</a></li>
+						<li class="pager-item"><a title="Go to page 8" href="#">8</a></li>
+						<li class="pager-item"><a title="Go to page 9" href="#">9</a></li>
+						<li class="pager-next"><a title="Go to next page" href="/search/node/Lorem?page=1">›</a></li>
+						<li class="pager-last"><a title="Go to page 9" href="#">9</a></li>
+					</ul>
 				</div>
 			</div>
+			
 			<div class="wrapper">
 				<div class="catalog">
 					<ul class="catalog-list">
@@ -97,6 +132,24 @@ Case</a> |</h2><div class="sku">#24574</div>
 				</div>
 				
 			</div>
+			<div class="block-bg block-search">
+				<div class="wrapper">
+					<ul class="pager">
+						<li class="pager-current first"><a title="Go to page 2" href="#">1</a></li>
+						<li class="pager-back"><a title="Go to next page" href="/search/node/Lorem?page=1">‹</a></li>
+						<li class="pager-item"><a title="Go to page 2" href="#">2</a></li>
+						<li class="pager-item"><a title="Go to page 3" href="#">3</a></li>
+						<li class="pager-current">4</li>
+						<li class="pager-item"><a title="Go to page 5" href="#">5</a></li>
+						<li class="pager-item"><a title="Go to page 6" href="#">6</a></li>
+						<li class="pager-item"><a title="Go to page 7" href="#">7</a></li>
+						<li class="pager-item"><a title="Go to page 8" href="#">8</a></li>
+						<li class="pager-item"><a title="Go to page 9" href="#">9</a></li>
+						<li class="pager-next"><a title="Go to next page" href="/search/node/Lorem?page=1">›</a></li>
+						<li class="pager-last"><a title="Go to page 9" href="#">9</a></li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</div>
 	<footer class="footer">
@@ -107,6 +160,13 @@ Case</a> |</h2><div class="sku">#24574</div>
 	</footer>
 </div>
 <!-- END out-->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.jcarousel.js"></script>
 
+
+<script type="text/javascript" src="js/jcarousel.skeleton.js"></script>
+<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="js/center.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
 </body>
 </html>

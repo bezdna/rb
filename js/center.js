@@ -43,4 +43,3 @@
         this.scroll('+=' + (relative * -1), animate, callback);
     };
 }(jQuery));
-
