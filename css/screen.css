@@ -257,6 +257,7 @@ header .super-top { overflow: hidden; }
 .cabinet a:before { font-family: "icomoon"; display: block; font-size: 1.6em; top: 20px; left: 50%; margin-left: -10px; position: absolute; }
 
 .menu-top { overflow: hidden; text-align: center; font: 0/0 Arial; }
+@media screen and (max-width: 1180px) { .menu-top { display: table; } }
 .menu-top li { display: inline-block; vertical-align: top; max-width: 200px; width: 25%; }
 @media screen and (max-width: 1180px) { .menu-top li { display: table-cell; } }
 .menu-top li a { font-size: 18px; font-family: "CharterITC-Bold"; text-transform: uppercase; font-weight: 400; text-decoration: none; vertical-align: middle; padding: 35px 5px 35px 50px; position: relative; display: table-cell; text-align: left; height: 2.2em; line-height: 1; vertical-align: middle; color: white; }
