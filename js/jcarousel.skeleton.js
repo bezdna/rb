@@ -14,7 +14,7 @@
         var carouselStage      = $('.jcarousel').jcarousel({wrap: 'circular'});
         var carouselNavigation = $('.carousel-navigation')
         .jcarousel({
-            center: true,
+            // center: true,
             wrap: 'circular', 
             // visible: '5',
             transitions: Modernizr.csstransitions ? {

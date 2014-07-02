@@ -1,0 +1,311 @@
+<!doctype html>
+<!--[if lte IE 8]><html class="lteie8"><![endif]-->
+<!--[if gt IE 8]><!--><html><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<link rel="stylesheet" type="text/css" href="css/jcarousel.skeleton.css">
+	<link rel="stylesheet" type="text/css" href="css/lightSlider.css">
+	
+	<script src="js/modernizr.js"></script>
+	<script src="js/html5shiv.js"></script>
+</head>
+<body>
+
+<!-- BEGIN  out-->
+<div class="layout">	
+	<div class="page-wrap">
+		<header>
+			<div class="wrapper">
+				<div class="super-top">
+					<div class="logo">
+						<a href="index.html"></a>
+					</div>
+					<div class="cabinet">
+						<a href="#form-login"  class="icon-cabinet popup-with-form">Личный кабинет</a>
+						<!-- form itself -->
+						<form id="form-login" class="white-popup-block mfp-hide">
+							<h1>Вход в личный кабинет</h1>
+							<fieldset style="border:0;">
+								<ol>
+									<li>
+										<input id="login" name="login" type="text" placeholder="Логин" required="">
+									</li>
+									<li>										
+										<input id="password" name="password" type="password" placeholder="Пароль" required="">
+									</li>
+									<li>
+										<button class="button">Войти</button>
+										<a href="#" class="register">Зарегестриваться</a>
+									</li>
+								</ol>
+							</fieldset>
+						</form>
+					</div>
+					<ul class="menu-top">
+						<li><a href="about.html" class="icon-about"><span>О проекте</span></a></li>
+						<li><a href="time.html" class="icon-event"><span>События</span></a></li>
+						<li><a href="article.html" class="icon-article"><span>Cтатьи</span></a></li>
+						<li><a href="dom.html" class="icon-house"><span>Аукционные дома</span></a></li>
+					</ul>
+				</div>
+				
+			</div>
+			<nav>
+				<ul>
+					<li class="zivopis"><a href="zivopis.html"><span>Живопись и графика</span></a></li>
+					<li class="serebro"><a href="serebro.html"><span>Серебро</span></a></li>
+					<li class="faberze"><a href="faberze.html"><span>Фаберже</span></a></li>
+					<li class="bronza"><a href="bronza.html"><span>Бронза</span></a></li>
+					<li class="steklo"><a href="steklo.html"><span>Стекло</span></a></li>
+					<li class="farfor"><a href="farfor.html"><span>Фарфор</span></a></li>
+					<li class="yuvelir"><a href="yuvelir.html"><span>Ювелирные украшения</span></a></li>
+					<li class="ordena"><a href="ordena.html"><span>Ордена и медали</span></a></li>
+					<li class="kult"><a href="kult.html"><span>Предметы культа</span></a></li>
+					<li class="raznoe"><a href="raznoe.html"><span>Разное</span></a></li>
+				</ul>
+			</nav>
+			
+		</header>
+		<div class="main">
+			<div class="jcarousel-wrapper">
+
+                <!-- Carousel -->
+                <div class="jcarousel">
+                    <ul>
+                        <li><img src="img/main_1.jpg" alt=""></li>
+                        <li><img src="img/main_2.jpg" alt=""></li>
+                        <li><img src="img/main_3.jpg" alt=""></li>
+                        <li><img src="img/main_1.jpg" alt=""></li>
+                        <li><img src="img/main_2.jpg" alt=""></li>
+                        <li><img src="img/main_3.jpg" alt=""></li>
+                    </ul>
+                </div>
+
+                <!-- Prev/next controls -->
+                <a href="#" class="prev jcarousel-control-prev">&lsaquo;</a>
+                <a href="#" class="next jcarousel-control-next">&rsaquo;</a>
+
+                <!-- Pagination -->
+                <p class="jcarousel-pagination">
+                    <!-- Pagination items will be generated in here -->
+                </p>
+				<div class="navigation">
+                    <a href="#" class="prev prev-navigation">&lsaquo;</a>
+                    <a href="#" class="next next-navigation">&rsaquo;</a>
+                    <div class="carousel carousel-navigation">
+                        <ul>
+                            <li><img src="img/main_1_thumb.jpg" alt="">
+                            	<p>SILVER CHEST WITH GOLD CARVING</p>
+                            </li>
+                            <li><img src="img/main_2_thumb.jpg" alt="">
+                            	<p>GOLD CARVING</p>
+                            </li>
+                            <li><img src="img/main_3_thumb.jpg" alt="">
+                            	<p>SILVER CHEST </p>
+                            </li>
+                            <li><img src="img/main_1_thumb.jpg" alt="">
+                            	<p>SILVER CHEST WITH GOLD CARVING1</p>
+                            </li>
+                            <li><img src="img/main_2_thumb.jpg" alt="">
+                            	<p>SILVER CARVING2</p>
+                            </li>
+                            <li><img src="img/main_3_thumb.jpg" alt="">
+                            	<p>SILVER CHEST </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+		</div>
+
+	</div>
+	<footer class="footer">
+		<div class="wrapper">
+			<p class="copyrigth">RUSBIDDINGS © 2014</p>
+			<p><a href="mailto:info@rusbiddings.com" class="contact">info@rusbiddings.com</a></p>
+		</div>
+	</footer>
+</div>
+<!-- END out-->
+<script type="text/javascript" src="js/jquery.js"></script>
+<!-- <script type="text/javascript" src="js/jquery.lightSlider.js"></script> -->
+<script type="text/javascript" src="js/jquery.jcarousel.js"></script>
+<script type="text/javascript" src="js/jcarousel.skeleton.js"></script>
+<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+<!-- <script type="text/javascript" src="js/center.js"></script> -->
+<!-- <script type="text/javascript" src="js/jquery.jcarousel.03beta5.js"></script> -->
+<script type="text/javascript" src="js/center.js"></script>
+
+<script type="text/javascript" src="js/common.js"></script>
+
+<script>
+$(document).ready(function() {
+		// var carouselStage = $('.jcarousel').jcarousel({
+		// 	wrap: 'circular',
+
+		// });
+		// var carouselNavigation = $('.carousel-navigation')
+		// .jcarousel({
+		//     wrap: 'circular',
+		//     // center: true
+		// })
+		// .jcarouselAutoscroll({
+  //           interval: 4000,
+  //           target: '+=1',
+  //           autostart: true,
+            
+  //       })
+  //       .jcarouselControl({
+  //           target: '+=1',
+  //           carousel: carouselStage
+  //       })
+		// ;
+
+
+		//  $('.jcarousel-control-prev')
+  //           .on('jcarouselcontrol:inactive', function() {
+  //               $(this).addClass('inactive');
+  //           })
+  //           .on('jcarouselcontrol:active', function() {
+  //               $(this).removeClass('inactive');
+  //           })
+  //           .jcarouselControl({
+  //               target: '-=1'
+  //           });
+
+  //       $('.jcarousel-control-next')
+  //           .on('jcarouselcontrol:inactive', function() {
+  //               $(this).addClass('inactive');
+  //           })
+  //           .on('jcarouselcontrol:active', function() {
+  //               $(this).removeClass('inactive');
+  //           })
+  //           .jcarouselControl({
+  //               target: '+=1'
+  //           });
+
+  //       $('.prev-navigation')
+  //           .on('jcarouselcontrol:inactive', function() {
+  //               $(this).addClass('inactive');
+  //           })
+  //           .on('jcarouselcontrol:active', function() {
+  //               $(this).removeClass('inactive');
+  //           })
+  //           .jcarouselControl({
+  //               target: '-=1'
+  //           });
+
+  //       $('.next-navigation')
+  //           .on('jcarouselcontrol:inactive', function() {
+  //               $(this).addClass('inactive');
+  //           })
+  //           .on('jcarouselcontrol:active', function() {
+  //               $(this).removeClass('inactive');
+  //           })
+  //           .jcarouselControl({
+  //               target: '+=1'
+  //           });
+		console.log( "ready!" );
+	    var h_wrap = $('.page-wrap').height();
+	    var h_header = $('header').height();
+	    console.log(h_wrap, h_header);
+	    var h = $('.jcarousel-wrapper').height( h_wrap - h_header - 30);
+	    $('.jcarousel li img').height( h_wrap - h_header - 30);
+	    $('.jcarousel').on('click', 'li', function() {
+		    $('.jcarousel').jcarousel('center', this);
+		});
+	    console.log(h);
+	    $(window).resize(function() {
+		    var h_wrap = $('.page-wrap').height();
+		    var h_header = $('header').height();
+		    console.log(h_wrap, h_header);
+		    var h = $('.jcarousel-wrapper').height( h_wrap - h_header - 30);
+		    $('.jcarousel li img').height( h_wrap - h_header - 30);
+		    $('.jcarousel').jcarousel('reload');
+		});
+	});
+
+
+//   winSet();
+//   $('.jcarousel').jcarousel('center', (1), false);
+
+//   $('.jcarousel')
+//     .on('click', 'li', function() {
+//         $('.jcarousel').jcarousel('items').removeClass('centered');
+//         $(this).addClass('centered');
+
+//         $('.jcarousel').jcarousel('center', this);
+//     })
+//     // This gets triggered on window resize
+//     .on('reloadend.jcarousel', function() {
+//         var centered = $('.jcarousel').jcarousel('items').find('.centered');
+//         $('.jcarousel').jcarousel('center', centered);
+//   });
+
+
+//   $("img").on("swipeleft", function(event){
+// 	var newDesNum = parseInt($('#nolink').html()) + 1;
+// 	if (newDesNum > MaxIm) {newDesNum = 1;}
+// 	changeContent(newDesNum);
+//   });
+
+//   $("img").on("swiperight", function(event){
+// 	var newDesNum = parseInt($('#nolink').html()) - 1;
+// 	if (newDesNum < 1) {newDesNum = MaxIm;}
+// 	changeContent(newDesNum);
+//   });
+
+// });
+// function pageWidth() {return window.innerWidth != null? window.innerWidth: document.body != null? document.body.clientWidth:null;}
+
+// function page(pageD) {
+//   scrBy = '-=' + (scrAmt);
+//   if(pageD == '1') {scrBy = '+=' + (scrAmt); }
+
+//   $('.jcarousel').jcarousel('scroll', scrBy);
+//   return false;
+// };
+
+// function iNav(itmD) {
+// 	var newDesNum = parseInt($('#nolink').html());
+
+//   scrBy = '-=1';
+//   newDesNum -=1;
+//   if(itmD == '1') {scrBy = '+=1'; newDesNum +=2}
+
+// 	if (newDesNum > MaxIm) {newDesNum = 1;}
+// 	if (newDesNum < 1) {newDesNum = MaxIm;}
+// 	changeContent(newDesNum);
+
+//   $('.jcarousel').jcarousel('scroll', scrBy);
+//   return false;
+// };
+
+
+		 // $('.imageGallery').lightSlider({
+   //          gallery:true,
+   //          // gallery:false,
+   //          slideMove:1,
+   //          minSlide:1,
+   //          maxSlide:7,
+   //          auto:true,
+   //          mode:'slide',
+   //          thumbWidth:100,
+   //          slideWidth:400,
+   //          loop: true,
+	  //       useCSS:true,
+	  //       pause: 4000,
+	  //       speed: 1000,	        
+	  //       loop:true,
+	        
+	  //       currentPagerPosition:'middle',
+   //          // proportion:'100%',
+   //      });
+</script>
+</body>
+</html>

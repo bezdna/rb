@@ -88,7 +88,8 @@ header
 			line-height: 1
 			vertical-align: middle
 			color: #FFF
-			
+			position: relative
+			float: left
 			+r(tablet)
 				font-size: 16px
 				padding: 37px 5px 37px 50px
@@ -129,7 +130,6 @@ nav
 			vertical-align: bottom
 			background-position: center top
 			background-repeat: no-repeat
-			position: relative
 			+r(desktop-big)
 				+background-size(cover)
 			&.zivopis
@@ -152,6 +152,9 @@ nav
 				background-image: url(../img/bg_menu/kult.jpg)
 			&.raznoe
 				background-image: url(../img/bg_menu/raznoe.jpg)
+			div
+				position: relative
+				
 			a
 				display: block
 				position: absolute
@@ -506,10 +509,12 @@ nav
 	padding: 100px 00px 0 00px
 	position: relative
 	width: 500px
+	overflow: hidden
+	
 	ul
 		width: 2000em
 		position: relative
-		margin-left: -200px
+		// margin-left: -200px
 		// left: -200px
 	li
 		float: left
@@ -540,7 +545,6 @@ nav
 			height: 100px
 			cursor: pointer
 		p
-				
 			font-size: 14px
 			display: none
 			position: absolute
@@ -558,6 +562,14 @@ nav
 				position: absolute
 				top: 100%
 				left: 70%
+		&:nth-child(2)
+			p
+				left: 0
+				right: auto
+				&:before
+					left: auto
+					right: 70%
+
 .preview 
 	position: relative
 	display: inline-block
@@ -596,3 +608,31 @@ nav
 			color: #130406
 			font-family: "LinBiolinumO"
 			font-size: 16px
+.jcarousel-wrapper
+	
+	overflow: hidden
+	position: relative
+	
+.navigation
+	// display: none
+.jcarousel-pagination
+	// display: none
+
+	
+.jcarousel
+	position: relative
+	overflow: hidden
+	ul
+		width: 20000em
+		position: relative
+		list-style: none
+		margin: 0
+		padding: 0
+		li 
+			float: left
+			img
+				max-height: 100%
+				position: relative
+				width: auto
+				height: 100%
+				height: 0

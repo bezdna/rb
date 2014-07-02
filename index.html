@@ -9,6 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<link rel="stylesheet" type="text/css" href="css/jcarousel.skeleton.css">
+	<link rel="stylesheet" type="text/css" href="css/lightSlider.css">
+	
 	<script src="js/modernizr.js"></script>
 	<script src="js/html5shiv.js"></script>
 </head>
@@ -45,26 +47,54 @@
 						</form>
 					</div>
 					<ul class="menu-top">
-						<li><a href="about.html" class="icon-about"><span>О проекте</span></a></li>
-						<li><a href="time.html" class="icon-event"><span>События</span></a></li>
-						<li><a href="article.html" class="icon-article"><span>Cтатьи</span></a></li>
-						<li><a href="dom.html" class="icon-house"><span>Аукционные дома</span></a></li>
+						<li><div>
+							<a href="about.html" class="icon-about"><span>О проекте</span></a>
+						</div></li>
+						<li><div>
+							<a href="time.html" class="icon-event"><span>События</span></a>
+						</div></li>
+						<li><div>
+							<a href="article.html" class="icon-article"><span>Cтатьи</span></a>
+						</div></li>
+						<li><div>
+							<a href="dom.html" class="icon-house"><span>Аукционные дома</span></a>
+						</div></li>
 					</ul>
 				</div>
 				
 			</div>
 			<nav>
 				<ul>
-					<li class="zivopis"><a href="zivopis.html"><span>Живопись и графика</span></a></li>
-					<li class="serebro"><a href="serebro.html"><span>Серебро</span></a></li>
-					<li class="faberze"><a href="faberze.html"><span>Фаберже</span></a></li>
-					<li class="bronza"><a href="bronza.html"><span>Бронза</span></a></li>
-					<li class="steklo"><a href="steklo.html"><span>Стекло</span></a></li>
-					<li class="farfor"><a href="farfor.html"><span>Фарфор</span></a></li>
-					<li class="yuvelir"><a href="yuvelir.html"><span>Ювелирные украшения</span></a></li>
-					<li class="ordena"><a href="ordena.html"><span>Ордена и медали</span></a></li>
-					<li class="kult"><a href="kult.html"><span>Предметы культа</span></a></li>
-					<li class="raznoe"><a href="raznoe.html"><span>Разное</span></a></li>
+					<li class="zivopis"><div>
+						<a href="zivopis.html"><span>Живопись и графика</span></a>
+					</div></li>
+					<li class="serebro"><div>
+						<a href="serebro.html"><span>Серебро</span></a>
+					</div></li>
+					<li class="faberze"><div>
+						<a href="faberze.html"><span>Фаберже</span></a>
+					</div></li>
+					<li class="bronza"><div>
+						<a href="bronza.html"><span>Бронза</span></a>
+					</div></li>
+					<li class="steklo"><div>
+						<a href="steklo.html"><span>Стекло</span></a>
+					</div></li>
+					<li class="farfor"><div>
+						<a href="farfor.html"><span>Фарфор</span></a>
+					</div></li>
+					<li class="yuvelir"><div>
+						<a href="yuvelir.html"><span>Ювелирные украшения</span></a>
+					</div></li>
+					<li class="ordena"><div>
+						<a href="ordena.html"><span>Ордена и медали</span></a>
+					</div></li>
+					<li class="kult"><div>
+						<a href="kult.html"><span>Предметы культа</span></a>
+					</div></li>
+					<li class="raznoe"><div>
+						<a href="raznoe.html"><span>Разное</span></a>
+					</div></li>
 				</ul>
 			</nav>
 			
@@ -80,7 +110,7 @@
                         <li><img src="img/main_3.jpg" alt=""></li>
                         <li><img src="img/main_1.jpg" alt=""></li>
                         <li><img src="img/main_2.jpg" alt=""></li>
-                        <li><img src="img/main_3.jpg" alt=""></li>
+
                     </ul>
                 </div>
 
@@ -112,9 +142,7 @@
                             <li><img src="img/main_2_thumb.jpg" alt="">
                             	<p>SILVER CARVING2</p>
                             </li>
-                            <li><img src="img/main_3_thumb.jpg" alt="">
-                            	<p>SILVER CHEST </p>
-                            </li>
+
                         </ul>
                     </div>
                 </div>
@@ -131,17 +159,19 @@
 </div>
 <!-- END out-->
 <script type="text/javascript" src="js/jquery.js"></script>
+<!-- <script type="text/javascript" src="js/jquery.lightSlider.js"></script> -->
 <script type="text/javascript" src="js/jquery.jcarousel.js"></script>
-
-
 <script type="text/javascript" src="js/jcarousel.skeleton.js"></script>
 <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+<!-- <script type="text/javascript" src="js/center.js"></script> -->
+<!-- <script type="text/javascript" src="js/jquery.jcarousel.03beta5.js"></script> -->
 <script type="text/javascript" src="js/center.js"></script>
+
 <script type="text/javascript" src="js/common.js"></script>
 
 <script>
-	$( document ).ready(function() {
-	    console.log( "ready!" );
+$(document).ready(function() {
+		console.log( "ready!" );
 	    var h_wrap = $('.page-wrap').height();
 	    var h_header = $('header').height();
 	    console.log(h_wrap, h_header);
