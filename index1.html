@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
-	<link rel="stylesheet" type="text/css" href="css/jcarousel.skeleton.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/jcarousel.skeleton.css"> -->
 	<link rel="stylesheet" type="text/css" href="css/lightSlider.css">
 	
 	<script src="js/modernizr.js"></script>
@@ -47,31 +47,70 @@
 						</form>
 					</div>
 					<ul class="menu-top">
-						<li><a href="about.html" class="icon-about"><span>О проекте</span></a></li>
-						<li><a href="time.html" class="icon-event"><span>События</span></a></li>
-						<li><a href="article.html" class="icon-article"><span>Cтатьи</span></a></li>
-						<li><a href="dom.html" class="icon-house"><span>Аукционные дома</span></a></li>
+						<li><div>
+							<a href="about.html" class="icon-about"><span>О проекте</span></a>
+						</div></li>
+						<li><div>
+							<a href="time.html" class="icon-event"><span>События</span></a>
+						</div></li>
+						<li><div>
+							<a href="article.html" class="icon-article"><span>Cтатьи</span></a>
+						</div></li>
+						<li><div>
+							<a href="dom.html" class="icon-house"><span>Аукционные дома</span></a>
+						</div></li>
 					</ul>
 				</div>
 				
 			</div>
 			<nav>
 				<ul>
-					<li class="zivopis"><a href="zivopis.html"><span>Живопись и графика</span></a></li>
-					<li class="serebro"><a href="serebro.html"><span>Серебро</span></a></li>
-					<li class="faberze"><a href="faberze.html"><span>Фаберже</span></a></li>
-					<li class="bronza"><a href="bronza.html"><span>Бронза</span></a></li>
-					<li class="steklo"><a href="steklo.html"><span>Стекло</span></a></li>
-					<li class="farfor"><a href="farfor.html"><span>Фарфор</span></a></li>
-					<li class="yuvelir"><a href="yuvelir.html"><span>Ювелирные украшения</span></a></li>
-					<li class="ordena"><a href="ordena.html"><span>Ордена и медали</span></a></li>
-					<li class="kult"><a href="kult.html"><span>Предметы культа</span></a></li>
-					<li class="raznoe"><a href="raznoe.html"><span>Разное</span></a></li>
+					<li class="zivopis"><div>
+						<a href="zivopis.html"><span>Живопись и графика</span></a>
+					</div></li>
+					<li class="serebro"><div>
+						<a href="serebro.html"><span>Серебро</span></a>
+					</div></li>
+					<li class="faberze"><div>
+						<a href="faberze.html"><span>Фаберже</span></a>
+					</div></li>
+					<li class="bronza"><div>
+						<a href="bronza.html"><span>Бронза</span></a>
+					</div></li>
+					<li class="steklo"><div>
+						<a href="steklo.html"><span>Стекло</span></a>
+					</div></li>
+					<li class="farfor"><div>
+						<a href="farfor.html"><span>Фарфор</span></a>
+					</div></li>
+					<li class="yuvelir"><div>
+						<a href="yuvelir.html"><span>Ювелирные украшения</span></a>
+					</div></li>
+					<li class="ordena"><div>
+						<a href="ordena.html"><span>Ордена и медали</span></a>
+					</div></li>
+					<li class="kult"><div>
+						<a href="kult.html"><span>Предметы культа</span></a>
+					</div></li>
+					<li class="raznoe"><div>
+						<a href="raznoe.html"><span>Разное</span></a>
+					</div></li>
 				</ul>
 			</nav>
 			
 		</header>
 		<div class="main">
+			<div class="lightSlider_home">
+				<ul class="lightSlider hidden">
+		            <li data-thumb="img/main_1_thumb.jpg"><img src="img/main_1.jpg" alt=""></li>
+		            <li data-thumb="img/main_2_thumb.jpg"><img src="img/main_2.jpg" alt=""></li>
+		            <li data-thumb="img/main_3_thumb.jpg"><img src="img/main_3.jpg" alt=""></li>
+		            <li data-thumb="img/main_1_thumb.jpg"><img src="img/main_1.jpg" alt=""></li>
+		            <li data-thumb="img/main_2_thumb.jpg"><img src="img/main_2.jpg" alt=""></li>
+		            <li data-thumb="img/main_3_thumb.jpg"><img src="img/main_3.jpg" alt=""></li>
+		        </ul>	
+			</div>
+			
 			<div class="jcarousel-wrapper">
 
                 <!-- Carousel -->
@@ -133,179 +172,80 @@
 </div>
 <!-- END out-->
 <script type="text/javascript" src="js/jquery.js"></script>
-<!-- <script type="text/javascript" src="js/jquery.lightSlider.js"></script> -->
-<script type="text/javascript" src="js/jquery.jcarousel.js"></script>
-<script type="text/javascript" src="js/jcarousel.skeleton.js"></script>
+<script type="text/javascript" src="js/jquery.lightSlider.js"></script>
 <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
-<!-- <script type="text/javascript" src="js/center.js"></script> -->
-<!-- <script type="text/javascript" src="js/jquery.jcarousel.03beta5.js"></script> -->
-<script type="text/javascript" src="js/center.js"></script>
 
 <script type="text/javascript" src="js/common.js"></script>
 
 <script>
 $(document).ready(function() {
-		// var carouselStage = $('.jcarousel').jcarousel({
-		// 	wrap: 'circular',
 
-		// });
-		// var carouselNavigation = $('.carousel-navigation')
-		// .jcarousel({
-		//     wrap: 'circular',
-		//     // center: true
-		// })
-		// .jcarouselAutoscroll({
-  //           interval: 4000,
-  //           target: '+=1',
-  //           autostart: true,
-            
-  //       })
-  //       .jcarouselControl({
-  //           target: '+=1',
-  //           carousel: carouselStage
-  //       })
-		// ;
-
-
-		//  $('.jcarousel-control-prev')
-  //           .on('jcarouselcontrol:inactive', function() {
-  //               $(this).addClass('inactive');
-  //           })
-  //           .on('jcarouselcontrol:active', function() {
-  //               $(this).removeClass('inactive');
-  //           })
-  //           .jcarouselControl({
-  //               target: '-=1'
-  //           });
-
-  //       $('.jcarousel-control-next')
-  //           .on('jcarouselcontrol:inactive', function() {
-  //               $(this).addClass('inactive');
-  //           })
-  //           .on('jcarouselcontrol:active', function() {
-  //               $(this).removeClass('inactive');
-  //           })
-  //           .jcarouselControl({
-  //               target: '+=1'
-  //           });
-
-  //       $('.prev-navigation')
-  //           .on('jcarouselcontrol:inactive', function() {
-  //               $(this).addClass('inactive');
-  //           })
-  //           .on('jcarouselcontrol:active', function() {
-  //               $(this).removeClass('inactive');
-  //           })
-  //           .jcarouselControl({
-  //               target: '-=1'
-  //           });
-
-  //       $('.next-navigation')
-  //           .on('jcarouselcontrol:inactive', function() {
-  //               $(this).addClass('inactive');
-  //           })
-  //           .on('jcarouselcontrol:active', function() {
-  //               $(this).removeClass('inactive');
-  //           })
-  //           .jcarouselControl({
-  //               target: '+=1'
-  //           });
-		console.log( "ready!" );
-	    var h_wrap = $('.page-wrap').height();
-	    var h_header = $('header').height();
-	    console.log(h_wrap, h_header);
-	    var h = $('.jcarousel-wrapper').height( h_wrap - h_header - 30);
-	    $('.jcarousel li img').height( h_wrap - h_header - 30);
-	    $('.jcarousel').on('click', 'li', function() {
-		    $('.jcarousel').jcarousel('center', this);
-		});
-	    console.log(h);
-	    $(window).resize(function() {
-		    var h_wrap = $('.page-wrap').height();
-		    var h_header = $('header').height();
-		    console.log(h_wrap, h_header);
-		    var h = $('.jcarousel-wrapper').height( h_wrap - h_header - 30);
-		    $('.jcarousel li img').height( h_wrap - h_header - 30);
-		    $('.jcarousel').jcarousel('reload');
-		});
-	});
+	//slideWidth:270
+	console.log( "ready!" );
+    var h_wrap = $('.page-wrap').height();
+    var h_header = $('header').height();
+    console.log(h_wrap, h_header);
+    var h = $('.lightSlider').height( h_wrap - h_header - 30);
+    $('.lightSlider li img').height( h );
+    console.log(h);
+ //    $(window).resize(function() {
+	//     var h_wrap = $('.page-wrap').height();
+	//     var h_header = $('header').height();
+	//     console.log(h_wrap, h_header);
+	//     var h = $('.jcarousel-wrapper').height( h_wrap - h_header - 30);
+	//     $('.jcarousel li img').height( h_wrap - h_header - 30);
+	//     $('.jcarousel').jcarousel('reload');
+	// });
+	$('.lightSlider').lightSlider({
+		slideWidth: h +'px',
+        gallery:true,
+        slideMargin: 0,
+        slideMove: 1,
+        minSlide: 1,
+        maxSlide: 3,
+        mode: "slide",
+        
+        speed: 500, //ms'
+        auto: true,
+        pause: 4000,
+        loop: true,
+        controls: true,
+        prevHtml: '&lsaquo;',
+        nextHtml: '&rsaquo;',
+        thumbWidth: 100,
+        thumbMargin: 0,
+        currentPagerPosition: 'middle',
+        swipeThreshold: 40,
+        onSliderLoad: function() {
+            $('.lightSlider').removeClass('hidden');
+            $('.csPager').wrap( "<div class='csPager_wrap'></div>" );
+            $('.lightSlider').css('width', h * 6 +"px");
+        }     
+    });
 
 
-//   winSet();
-//   $('.jcarousel').jcarousel('center', (1), false);
-
-//   $('.jcarousel')
-//     .on('click', 'li', function() {
-//         $('.jcarousel').jcarousel('items').removeClass('centered');
-//         $(this).addClass('centered');
-
-//         $('.jcarousel').jcarousel('center', this);
-//     })
-//     // This gets triggered on window resize
-//     .on('reloadend.jcarousel', function() {
-//         var centered = $('.jcarousel').jcarousel('items').find('.centered');
-//         $('.jcarousel').jcarousel('center', centered);
-//   });
-
-
-//   $("img").on("swipeleft", function(event){
-// 	var newDesNum = parseInt($('#nolink').html()) + 1;
-// 	if (newDesNum > MaxIm) {newDesNum = 1;}
-// 	changeContent(newDesNum);
-//   });
-
-//   $("img").on("swiperight", function(event){
-// 	var newDesNum = parseInt($('#nolink').html()) - 1;
-// 	if (newDesNum < 1) {newDesNum = MaxIm;}
-// 	changeContent(newDesNum);
-//   });
-
-// });
-// function pageWidth() {return window.innerWidth != null? window.innerWidth: document.body != null? document.body.clientWidth:null;}
-
-// function page(pageD) {
-//   scrBy = '-=' + (scrAmt);
-//   if(pageD == '1') {scrBy = '+=' + (scrAmt); }
-
-//   $('.jcarousel').jcarousel('scroll', scrBy);
-//   return false;
-// };
-
-// function iNav(itmD) {
-// 	var newDesNum = parseInt($('#nolink').html());
-
-//   scrBy = '-=1';
-//   newDesNum -=1;
-//   if(itmD == '1') {scrBy = '+=1'; newDesNum +=2}
-
-// 	if (newDesNum > MaxIm) {newDesNum = 1;}
-// 	if (newDesNum < 1) {newDesNum = MaxIm;}
-// 	changeContent(newDesNum);
-
-//   $('.jcarousel').jcarousel('scroll', scrBy);
-//   return false;
-// };
+	// console.log( "ready!" );
+ //    var h_wrap = $('.page-wrap').height();
+ //    var h_header = $('header').height();
+ //    console.log(h_wrap, h_header);
+ //    var h = $('.jcarousel-wrapper').height( h_wrap - h_header - 30);
+ //    $('.jcarousel li img').height( h_wrap - h_header - 30);
+ //    $('.jcarousel').on('click', 'li', function() {
+	//     $('.jcarousel').jcarousel('center', this);
+	// });
+ //    console.log(h);
+ //    $(window).resize(function() {
+	//     var h_wrap = $('.page-wrap').height();
+	//     var h_header = $('header').height();
+	//     console.log(h_wrap, h_header);
+	//     var h = $('.jcarousel-wrapper').height( h_wrap - h_header - 30);
+	//     $('.jcarousel li img').height( h_wrap - h_header - 30);
+	//     $('.jcarousel').jcarousel('reload');
+	// });
+});
 
 
-		 // $('.imageGallery').lightSlider({
-   //          gallery:true,
-   //          // gallery:false,
-   //          slideMove:1,
-   //          minSlide:1,
-   //          maxSlide:7,
-   //          auto:true,
-   //          mode:'slide',
-   //          thumbWidth:100,
-   //          slideWidth:400,
-   //          loop: true,
-	  //       useCSS:true,
-	  //       pause: 4000,
-	  //       speed: 1000,	        
-	  //       loop:true,
-	        
-	  //       currentPagerPosition:'middle',
-   //          // proportion:'100%',
-   //      });
+
 </script>
 </body>
 </html>

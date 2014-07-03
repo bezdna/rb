@@ -22,8 +22,8 @@
 	transition-timing-function: inherit;
 }
 .csSlideWrapper li img {
-	width: 400px;
-	height: 400px;
+	width: 500px;
+	height: 500px;
 }
 .csSlideWrapper li 
 .csSlideWrapper .csFade {
@@ -112,7 +112,7 @@
 }
 .csSlideOuter .csPager.cSGallery li.active, .csSlideOuter .csPager.cSGallery li:hover {
 	opacity: 1;
-	border: 2px solid red;
+	/*border: 2px solid red;*/
 }
 .csSlideOuter .csPager.cSGallery img {
 	display: block;
@@ -130,7 +130,7 @@
 
 /* slider actions */
 .csAction > a {
-	width: 32px;
+/*	width: 32px;
 	display: block;
 	top: 50%;
 	height: 32px;
@@ -141,7 +141,7 @@
 	margin-top: -16px;
 	opacity: 0.5;
 	-webkit-transition: opacity 0.35s linear 0s;
-	transition: opacity 0.35s linear 0s;
+	transition: opacity 0.35s linear 0s;*/
 }
 .csAction > a:hover {
 	opacity: 1;
